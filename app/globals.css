@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'tw-animate-css';
+
+:root {
+  color-scheme: light;
+  --background: #F8FAFA;
+  --foreground: #091C1B;
+  --card: #ffffff;
+  --card-foreground: #091C1B;
+  --popover: #ffffff;
+  --popover-foreground: #091C1B;
+  
+  --primary: #12847B;
+  --primary-foreground: #ffffff;
+  
+  --secondary: #0A3C38;
+  --secondary-foreground: #ffffff;
+  
+  --muted: #E2ECEB;
+  --muted-foreground: #5A7673;
+  
+  --accent: #D7ECEA;
+  --accent-foreground: #091C1B;
+  
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #D7ECEA;
+  --input: #E2ECEB;
+  --ring: #12847B;
+  
+  --radius: 0.625rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #091C1B;
+  --sidebar-primary: #12847B;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #D7ECEA;
+  --sidebar-accent-foreground: #091C1B;
+  --sidebar-border: #D7ECEA;
+  --sidebar-ring: #12847B;
+
+  /* Custom theme variants */
+  --emerald-dark: #0A3C38;
+  --emerald-accent: #12847B;
+  --gold-primary: #12847B;
+  --gold-light: #D7ECEA;
+
+  --bespoke-gold: #12847B;
+  --bespoke-gold-light: #D7ECEA;
+  --bespoke-gold-dark: #0A3C38;
+  --bespoke-black: #091C1B;
+  --bespoke-white: #F8FAFA;
+  --bespoke-beige: #ffffff;
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #091C1B;
+  --foreground: #F8FAFA;
+  --card: #0A3C38;
+  --card-foreground: #F8FAFA;
+  --popover: #0A3C38;
+  --popover-foreground: #F8FAFA;
+  
+  --primary: #1CC4B5;
+  --primary-foreground: #091C1B;
+  
+  --secondary: #12847B;
+  --secondary-foreground: #ffffff;
+  
+  --muted: #113634;
+  --muted-foreground: #8DB3B0;
+  
+  --accent: #113634;
+  --accent-foreground: #F8FAFA;
+  
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #113634;
+  --input: #113634;
+  --ring: #1CC4B5;
+
+  --sidebar: #091C1B;
+  --sidebar-foreground: #F8FAFA;
+  --sidebar-primary: #1CC4B5;
+  --sidebar-primary-foreground: #091C1B;
+  --sidebar-accent: #113634;
+  --sidebar-accent-foreground: #F8FAFA;
+  --sidebar-border: #113634;
+  --sidebar-ring: #1CC4B5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    color-scheme: dark;
+    --background: #091C1B;
+    --foreground: #F8FAFA;
+    --card: #0A3C38;
+    --card-foreground: #F8FAFA;
+    --popover: #0A3C38;
+    --popover-foreground: #F8FAFA;
+    
+    --primary: #1CC4B5;
+    --primary-foreground: #091C1B;
+    
+    --secondary: #12847B;
+    --secondary-foreground: #ffffff;
+    
+    --muted: #113634;
+    --muted-foreground: #8DB3B0;
+    
+    --accent: #113634;
+    --accent-foreground: #F8FAFA;
+    
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+    --border: #113634;
+    --input: #113634;
+    --ring: #1CC4B5;
+
+    --sidebar: #091C1B;
+    --sidebar-foreground: #F8FAFA;
+    --sidebar-primary: #1CC4B5;
+    --sidebar-primary-foreground: #091C1B;
+    --sidebar-accent: #113634;
+    --sidebar-accent-foreground: #F8FAFA;
+    --sidebar-border: #113634;
+    --sidebar-ring: #1CC4B5;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Gradient accents for sections matching the gold theme */
+  .gradient-gold {
+    @apply bg-gradient-to-br from-muted via-background to-secondary;
+  }
+  
+  .gradient-wine {
+    @apply bg-gradient-to-br from-muted via-background to-accent;
+  }
+  
+  .gradient-accent {
+    @apply bg-gradient-to-r from-primary to-accent;
+  }
+}

@@ -7,10 +7,6 @@ import { motion } from 'framer-motion'
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
   return (
     <footer className="bg-[#0B1716] text-white pt-20 pb-6 relative overflow-hidden">
       {/* Background Patterns */}
@@ -24,11 +20,18 @@ export default function Footer() {
 
           {/* Brand Info */}
           <div className="lg:col-span-4">
-            <Link href="/" className="flex items-center gap-2 font-semibold mb-6">
-              <Box className="h-8 w-8 text-primary" strokeWidth={2.5} />
-              <span className="text-3xl font-bold tracking-tight">
-                Bexon
-              </span>
+            <Link href="/" className="flex items-center gap-2.5 font-semibold mb-6 group">
+              <div className="bg-primary/20 p-2 rounded-xl group-hover:bg-primary/30 transition-colors">
+                <Box className="h-6 w-6 text-primary" strokeWidth={2.5} />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[26px] leading-[1] font-black text-white tracking-wide uppercase">
+                  Stylefab
+                </span>
+                <span className="text-[0.65rem] font-bold text-primary tracking-[0.2em] uppercase mt-1.5">
+                  Private Limited
+                </span>
+              </div>
             </Link>
             <p className="text-slate-400 text-[15px] leading-relaxed mb-8 pr-4">
               Developing personalize our customer journeys to increase satisfaction & loyalty of our expansion recognized by industry leaders.
@@ -53,50 +56,28 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services Links */}
-          <div className="lg:col-span-3 lg:ml-8">
-            <h4 className="font-bold text-lg mb-6">Services</h4>
+          {/* Quick Links */}
+          <div className="lg:col-span-5 lg:ml-8">
+            <h4 className="font-bold text-lg mb-6">Quick Links</h4>
             <ul className="space-y-4 text-[15px]">
-              <li><Link href="#" className="text-slate-400 hover:text-white transition-colors">Customer Experience</Link></li>
-              <li><Link href="#" className="text-slate-400 hover:text-white transition-colors">Training Programs</Link></li>
-              <li><Link href="#" className="text-slate-400 hover:text-white transition-colors">Business Strategy</Link></li>
-              <li><Link href="#" className="text-slate-400 hover:text-white transition-colors">Training Program</Link></li>
-              <li><Link href="#" className="text-slate-400 hover:text-white transition-colors">ESG Consulting</Link></li>
-              <li><Link href="#" className="text-slate-400 hover:text-white transition-colors">Development Hub</Link></li>
-            </ul>
-          </div>
-
-          {/* Resources Links */}
-          <div className="lg:col-span-2">
-            <h4 className="font-bold text-lg mb-6">Resources</h4>
-            <ul className="space-y-4 text-[15px]">
-              <li><Link href="#" className="text-slate-400 hover:text-white transition-colors">Contact us</Link></li>
-              <li><Link href="#" className="text-slate-400 hover:text-white transition-colors">Team Member</Link></li>
-              <li><Link href="#" className="text-slate-400 hover:text-white transition-colors">Recognitions</Link></li>
-              <li className="flex items-center gap-2">
-                <Link href="#" className="text-primary hover:text-white transition-colors">Careers</Link>
-                <span className="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">New</span>
-              </li>
-              <li><Link href="#" className="text-slate-400 hover:text-white transition-colors">News</Link></li>
-              <li><Link href="#" className="text-slate-400 hover:text-white transition-colors">Feedback</Link></li>
+              <li><Link href="/about" className="text-slate-400 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/contact" className="text-slate-400 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link href="/privacy-policy" className="text-slate-400 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-slate-400 hover:text-white transition-colors">Terms & Condition</Link></li>
             </ul>
           </div>
 
           {/* Our Office */}
           <div className="lg:col-span-3">
             <h4 className="font-bold text-lg mb-6">Our Office</h4>
-            <p className="text-slate-400 text-[15px] leading-relaxed mb-6">
-              993 Renner Burg, West Rand,<br />
-              MT 94251-030, USA.
+            <p className="text-white text-[15px] leading-relaxed mb-4">
+              <span className="font-bold">A:</span> 509, Corporate Annexe, Sonawala Road, Near Udyog Bhavan, Goregaon East, Mumbai – 400 063, Maharashtra, India
             </p>
             <div className="space-y-2 mb-6">
-              <p className="text-white text-[15px]"><span className="font-bold">P:</span> +1 (009) 544-7818</p>
-              <p className="text-white text-[15px]"><span className="font-bold">M:</span> support@bexon.com</p>
+              <p className="text-white text-[15px]"><span className="font-bold">P:</span> +91 96XXXXXX22</p>
+              <p className="text-white text-[15px]"><span className="font-bold">M:</span> info@stylefab.com</p>
             </div>
-            <div className="flex items-center gap-2 text-slate-400 text-[15px]">
-              <Clock className="w-4 h-4 text-primary" strokeWidth={2.5} />
-              Mon-Fri 10am-10pm
-            </div>
+
           </div>
         </div>
 
@@ -124,10 +105,10 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 relative">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 relative">
 
-          <p className="text-sm text-slate-400">
-            &copy; {currentYear} <span className="text-white font-semibold">Bexon</span> All right reserved
+          <p className="text-slate-400 text-sm">
+            &copy; {currentYear} <span className="text-white font-semibold">Stylefab PVT LTD</span> All right reserved
           </p>
 
           <div className="flex items-center gap-3">
@@ -145,20 +126,10 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="flex items-center gap-4 text-sm text-slate-400">
-            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white transition-colors">Terms & Condition</Link>
+          <div className="flex items-center gap-3 text-sm text-slate-400">
+            <span>Powered by</span>
+            <img src="/neo_logo.png" alt="Neologicx Logo" className="h-6 object-contain opacity-80 hover:opacity-100 transition-opacity" />
           </div>
-
-          {/* Scroll to Top Button */}
-          <button
-            onClick={scrollToTop}
-            className="absolute right-0 -top-16 lg:static lg:ml-4 w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-slate-200 transition-colors shadow-lg z-10"
-            aria-label="Scroll to top"
-          >
-            <ArrowUp className="w-5 h-5 text-slate-900 stroke-[3]" />
-          </button>
-
         </div>
       </div>
     </footer>

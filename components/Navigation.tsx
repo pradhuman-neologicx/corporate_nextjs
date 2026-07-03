@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Services', href: '/services', hasDropdown: true },
+  { label: 'Products', href: '/products' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -41,11 +41,18 @@ export default function Navigation() {
           }`}
       >
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 font-semibold flex-shrink-0">
-          <Box className="h-7 w-7 text-primary" strokeWidth={2.5} />
-          <span className="text-2xl font-bold tracking-tight text-slate-800">
-            Bexon
-          </span>
+        <Link href="/" className="flex items-center gap-2.5 font-semibold flex-shrink-0 group">
+          <div className="bg-primary/10 p-1.5 rounded-lg group-hover:bg-primary/20 transition-colors">
+            <Box className="h-6 w-6 text-primary" strokeWidth={2.5} />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-[22px] leading-[1] font-black text-slate-900 tracking-wide uppercase">
+              Stylefab
+            </span>
+            <span className="text-[0.6rem] font-bold text-primary tracking-[0.2em] uppercase mt-1">
+              Private Limited
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Links */}
@@ -53,15 +60,15 @@ export default function Navigation() {
           {navLinks.map((link) => {
             const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
             return (
-              <Link
-                key={link.label}
-                href={link.href}
-                className={`flex items-center gap-1.5 text-[15px] font-semibold transition-colors hover:text-primary ${isActive ? 'text-primary' : 'text-slate-700'
-                  }`}
-              >
-                {link.label}
-                {link.hasDropdown && <ChevronDown className="h-4 w-4 opacity-70 stroke-[2.5]" />}
-              </Link>
+              <div key={link.label} className="group relative">
+                <Link
+                  href={link.href}
+                  className={`flex items-center gap-1.5 text-[15px] font-semibold transition-colors hover:text-primary py-2 ${isActive ? 'text-primary' : 'text-slate-700'
+                    }`}
+                >
+                  {link.label}
+                </Link>
+              </div>
             );
           })}
         </div>
@@ -128,11 +135,18 @@ export default function Navigation() {
             >
               {/* Header */}
               <div className="flex items-center justify-between mb-8">
-                <Link href="/" className="flex items-center gap-2 font-semibold">
-                  <Box className="h-8 w-8 text-primary" strokeWidth={2.5} />
-                  <span className="text-3xl font-bold tracking-tight text-white">
-                    Bexon
-                  </span>
+                <Link href="/" className="flex items-center gap-2.5 font-semibold group">
+                  <div className="bg-primary/20 p-2 rounded-xl group-hover:bg-primary/30 transition-colors">
+                    <Box className="h-6 w-6 text-primary" strokeWidth={2.5} />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-[24px] leading-[1] font-black text-white tracking-wide uppercase">
+                      Stylefab
+                    </span>
+                    <span className="text-[0.65rem] font-bold text-primary tracking-[0.2em] uppercase mt-1.5">
+                      Private Limited
+                    </span>
+                  </div>
                 </Link>
                 <button
                   onClick={() => setIsDesktopPanelOpen(false)}
@@ -153,20 +167,20 @@ export default function Navigation() {
                 <div className="space-y-5">
                   <div>
                     <p className="text-slate-400 text-sm mb-1">Phone</p>
-                    <a href="tel:+10095447818" className="text-white font-medium hover:text-primary transition-colors">
-                      +1 (009) 544-7818
+                    <a href="tel:+919600000022" className="text-white font-medium hover:text-primary transition-colors">
+                      +91 96XXXXXX22
                     </a>
                   </div>
                   <div>
                     <p className="text-slate-400 text-sm mb-1">Email</p>
-                    <a href="mailto:info@bexon.com" className="text-white font-medium hover:text-primary transition-colors">
-                      info@bexon.com
+                    <a href="mailto:info@stylefab.com" className="text-white font-medium hover:text-primary transition-colors">
+                      info@stylefab.com
                     </a>
                   </div>
                   <div>
                     <p className="text-slate-400 text-sm mb-1">Location</p>
                     <p className="text-white font-medium leading-relaxed">
-                      993 Renner Burg, West Rand, MT 94251-030
+                      509, Corporate Annexe, Sonawala Road, Goregaon East, Mumbai – 400063
                     </p>
                   </div>
                 </div>
@@ -213,7 +227,7 @@ export default function Navigation() {
                   className="flex items-center justify-between border-b border-slate-50 py-4 text-[15px] font-semibold text-slate-700 hover:text-primary"
                 >
                   {link.label}
-                  {link.hasDropdown && <ChevronDown className="h-5 w-5" />}
+
                 </Link>
               ))}
               <div className="mt-6 flex flex-col gap-4">

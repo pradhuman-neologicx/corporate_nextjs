@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ArrowUpRight, Box, Star } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Hero() {
   const fadeUpVariants = {
@@ -22,18 +23,18 @@ export default function Hero() {
       {/* Background Image with Gradient Mask */}
       <div className="absolute inset-0 z-0 flex justify-end">
         <div className="w-full lg:w-[60%] h-full relative">
-           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10 lg:w-[40%]" />
-           {/* Diagonal slash decoration like screenshot */}
-           <div className="absolute top-0 bottom-0 left-0 w-[150px] bg-primary/90 transform -skew-x-12 -translate-x-1/2 z-10 hidden lg:block" />
-           <div className="absolute top-0 bottom-0 left-10 w-[50px] bg-secondary/80 transform -skew-x-12 -translate-x-1/2 z-10 hidden lg:block" />
-           <img 
-             src="/hero-bg.png" 
-             alt="Corporate Professional" 
-             className="w-full h-full object-cover object-center"
-           />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10 lg:w-[40%]" />
+          {/* Diagonal slash decoration like screenshot */}
+          <div className="absolute top-0 bottom-0 left-0 w-[150px] bg-primary/90 transform -skew-x-12 -translate-x-1/2 z-10 hidden lg:block" />
+          <div className="absolute top-0 bottom-0 left-10 w-[50px] bg-secondary/80 transform -skew-x-12 -translate-x-1/2 z-10 hidden lg:block" />
+          <img
+            src="/hero-bg.png"
+            alt="Corporate Professional"
+            className="w-full h-full object-cover object-center"
+          />
         </div>
       </div>
-      
+
       {/* Mobile background overlay */}
       <div className="absolute inset-0 bg-background/90 z-0 lg:hidden" />
 
@@ -57,7 +58,7 @@ export default function Hero() {
             variants={fadeUpVariants}
             initial="hidden"
             animate="visible"
-            className="text-5xl md:text-7xl lg:text-[80px] font-bold text-slate-900 leading-[1.1] tracking-tight"
+            className="text-5xl md:text-7xl lg:text-[80px]  font-bold text-foreground leading-[1.1] tracking-tight"
           >
             Leading Future for Corporate Business.
           </motion.h1>
@@ -67,7 +68,7 @@ export default function Hero() {
             variants={fadeUpVariants}
             initial="hidden"
             animate="visible"
-            className="mt-8 text-lg text-slate-600 max-w-lg leading-relaxed font-medium"
+            className="mt-8 text-lg text-muted-foreground max-w-lg leading-relaxed font-medium"
           >
             Committed to delivering innovative solutions that elevate your brand and accelerate enterprise growth across all sectors.
           </motion.p>
@@ -79,37 +80,39 @@ export default function Hero() {
             animate="visible"
             className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-8"
           >
-            <motion.button
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="group flex items-center gap-4 rounded-full bg-primary py-3 pl-8 pr-3 text-[15px] font-bold text-white transition-all hover:bg-primary/90"
-            >
-              Get Started
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0A3C38] transition-transform group-hover:-translate-y-[2px] group-hover:translate-x-[2px]">
-                <ArrowUpRight className="h-5 w-5 text-white" strokeWidth={2.5} />
-              </div>
-            </motion.button>
-            
+            <Link href="/products" className="inline-block">
+              <motion.div
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="group flex items-center gap-4 rounded-full bg-primary py-3 pl-8 pr-3 text-[15px] font-bold text-white transition-all hover:bg-primary/90 cursor-pointer"
+              >
+                Explore Products
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0A3C38] transition-transform group-hover:-translate-y-[2px] group-hover:translate-x-[2px]">
+                  <ArrowUpRight className="h-5 w-5 text-white" strokeWidth={2.5} />
+                </div>
+              </motion.div>
+            </Link>
+
             {/* Trust Indicator */}
             <div className="flex items-center gap-4">
-               <div className="flex -space-x-3">
-                  <img src="https://i.pravatar.cc/100?img=33" alt="Client" className="w-12 h-12 rounded-full border-2 border-white object-cover" />
-                  <img src="https://i.pravatar.cc/100?img=47" alt="Client" className="w-12 h-12 rounded-full border-2 border-white object-cover" />
-                  <img src="https://i.pravatar.cc/100?img=12" alt="Client" className="w-12 h-12 rounded-full border-2 border-white object-cover" />
-                  <div className="w-12 h-12 rounded-full border-2 border-white bg-primary text-white font-bold flex items-center justify-center z-10 text-sm">
-                     +500
-                  </div>
-               </div>
-               <div className="flex flex-col">
-                  <div className="flex items-center gap-1 text-amber-500">
-                     <Star className="w-4 h-4 fill-current" />
-                     <Star className="w-4 h-4 fill-current" />
-                     <Star className="w-4 h-4 fill-current" />
-                     <Star className="w-4 h-4 fill-current" />
-                     <Star className="w-4 h-4 fill-current" />
-                  </div>
-                  <span className="text-sm font-semibold text-slate-700 mt-1">Trusted by Clients</span>
-               </div>
+              <div className="flex -space-x-3">
+                <img src="https://i.pravatar.cc/100?img=33" alt="Client" className="w-12 h-12 rounded-full border-2 border-background object-cover" />
+                <img src="https://i.pravatar.cc/100?img=47" alt="Client" className="w-12 h-12 rounded-full border-2 border-background object-cover" />
+                <img src="https://i.pravatar.cc/100?img=12" alt="Client" className="w-12 h-12 rounded-full border-2 border-background object-cover" />
+                <div className="w-12 h-12 rounded-full border-2 border-background bg-primary text-white font-bold flex items-center justify-center z-10 text-sm">
+                  +500
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <div className="flex items-center gap-1 text-amber-500">
+                  <Star className="w-4 h-4 fill-current" />
+                  <Star className="w-4 h-4 fill-current" />
+                  <Star className="w-4 h-4 fill-current" />
+                  <Star className="w-4 h-4 fill-current" />
+                  <Star className="w-4 h-4 fill-current" />
+                </div>
+                <span className="text-sm font-semibold text-muted-foreground mt-1">Trusted by Clients</span>
+              </div>
             </div>
           </motion.div>
         </div>

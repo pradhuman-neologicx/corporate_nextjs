@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter, Roboto_Mono } from 'next/font/google'
 import Schema from '@/components/Schema'
 import { baseMetadata } from '@/lib/seo'
+import ScrollToTopButton from '@/components/ScrollToTopButton'
 import './globals.css'
 
 const inter = Inter({ variable: '--font-sans', subsets: ['latin'] })
@@ -52,6 +53,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased text-foreground">
         {children}
+        <ScrollToTopButton />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

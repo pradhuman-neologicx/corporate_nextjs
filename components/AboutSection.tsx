@@ -30,7 +30,7 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: '-50px' }}
             variants={fadeUpVariants}
-            className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border cursor-pointer"
+            className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border"
           >
             <Trophy className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
             <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">Award-Winning Expertise</h3>
@@ -70,7 +70,7 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: '-50px' }}
             variants={fadeUpVariants}
-            className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border cursor-pointer"
+            className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border"
           >
             <Users className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
             <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">Expert Team</h3>
@@ -86,7 +86,7 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: '-50px' }}
             variants={fadeUpVariants}
-            className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border cursor-pointer"
+            className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border"
           >
             <Headphones className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
             <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">Dedicated Support</h3>
@@ -102,7 +102,7 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: '-50px' }}
             variants={fadeUpVariants}
-            className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border cursor-pointer"
+            className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border"
           >
             <Lightbulb className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
             <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">Innovative Solutions</h3>
@@ -132,7 +132,7 @@ export default function AboutSection() {
               <BarChart3 className="w-7 h-7 text-primary-foreground stroke-[1.5]" />
             </div>
             <div className="relative z-10 mt-auto">
-              <p className="text-primary-foreground/80 font-medium mb-1">Faster Growth</p>
+              <p className="text-primary-foreground font-medium mb-1">Faster Growth</p>
               <h3 className="text-6xl font-bold text-white tracking-tight">8.5X</h3>
             </div>
           </motion.div>

@@ -37,22 +37,20 @@ export default function Footer() {
               Developing personalize our customer journeys to increase satisfaction & loyalty of our expansion recognized by industry leaders.
             </p>
 
-            {/* Awards */}
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-3">
-                <Award className="w-8 h-8 text-slate-300" strokeWidth={1} />
-                <div className="flex flex-col">
-                  <span className="text-lg font-bold leading-none">18</span>
-                  <span className="text-[10px] text-slate-400 uppercase tracking-widest leading-tight mt-1">Clutch<br />Awards</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <Award className="w-8 h-8 text-slate-300" strokeWidth={1} />
-                <div className="flex flex-col">
-                  <span className="text-lg font-bold leading-none">5</span>
-                  <span className="text-[10px] text-slate-400 uppercase tracking-widest leading-tight mt-1">Awwwards</span>
-                </div>
-              </div>
+            {/* Social Links */}
+            <div className="flex items-center gap-3 mt-8">
+              <a href="#" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition-all">
+                <Facebook className="w-4 h-4" />
+              </a>
+              <a href="#" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition-all">
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a href="#" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition-all">
+                <Twitter className="w-4 h-4" />
+              </a>
+              <a href="#" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition-all">
+                <Linkedin className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
@@ -110,21 +108,6 @@ export default function Footer() {
           <p className="text-slate-400 text-sm">
             &copy; {currentYear} <span className="text-white font-semibold">Stylefab PVT LTD</span> All right reserved
           </p>
-
-          <div className="flex items-center gap-3">
-            <a href="#" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition-all">
-              <Facebook className="w-4 h-4" />
-            </a>
-            <a href="#" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition-all">
-              <Instagram className="w-4 h-4" />
-            </a>
-            <a href="#" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition-all">
-              <Twitter className="w-4 h-4" />
-            </a>
-            <a href="#" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition-all">
-              <Linkedin className="w-4 h-4" />
-            </a>
-          </div>
 
           <div className="flex items-center gap-3 text-sm text-slate-400">
             <span>Powered by</span>

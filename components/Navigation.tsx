@@ -41,18 +41,8 @@ export default function Navigation() {
           }`}
       >
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 font-semibold flex-shrink-0 group">
-          <div className="bg-primary/10 p-1.5 rounded-lg group-hover:bg-primary/20 transition-colors">
-            <Box className="h-6 w-6 text-primary" strokeWidth={2.5} />
-          </div>
-          <div className="flex flex-col">
-            <span className="text-[22px] leading-[1] font-black text-slate-900 tracking-wide uppercase">
-              Stylefab
-            </span>
-            <span className="text-[0.6rem] font-bold text-primary tracking-[0.2em] uppercase mt-1">
-              Private Limited
-            </span>
-          </div>
+        <Link href="/" className="flex items-center flex-shrink-0">
+          <img src="/logo.png" alt="Stylefab Logo" className="h-12 w-auto object-contain" />
         </Link>
 
         {/* Desktop Links */}
@@ -135,18 +125,8 @@ export default function Navigation() {
             >
               {/* Header */}
               <div className="flex items-center justify-between mb-8">
-                <Link href="/" className="flex items-center gap-2.5 font-semibold group">
-                  <div className="bg-primary/20 p-2 rounded-xl group-hover:bg-primary/30 transition-colors">
-                    <Box className="h-6 w-6 text-primary" strokeWidth={2.5} />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-[24px] leading-[1] font-black text-white tracking-wide uppercase">
-                      Stylefab
-                    </span>
-                    <span className="text-[0.65rem] font-bold text-primary tracking-[0.2em] uppercase mt-1.5">
-                      Private Limited
-                    </span>
-                  </div>
+                <Link href="/" className="flex items-center">
+                  <img src="/logo.png" alt="Stylefab Logo" className="h-12 w-auto object-contain" />
                 </Link>
                 <button
                   onClick={() => setIsDesktopPanelOpen(false)}

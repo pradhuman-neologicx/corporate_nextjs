@@ -20,18 +20,8 @@ export default function Footer() {
 
           {/* Brand Info */}
           <div className="lg:col-span-4">
-            <Link href="/" className="flex items-center gap-2.5 font-semibold mb-6 group">
-              <div className="bg-primary/20 p-2 rounded-xl group-hover:bg-primary/30 transition-colors">
-                <Box className="h-6 w-6 text-primary" strokeWidth={2.5} />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-[26px] leading-[1] font-black text-white tracking-wide uppercase">
-                  Stylefab
-                </span>
-                <span className="text-[0.65rem] font-bold text-primary tracking-[0.2em] uppercase mt-1.5">
-                  Private Limited
-                </span>
-              </div>
+            <Link href="/" className="flex items-center mb-6">
+              <img src="/logo.png" alt="Stylefab Logo" className="h-12 w-auto object-contain" />
             </Link>
             <p className="text-slate-400 text-[15px] leading-relaxed mb-8 pr-4">
               Developing personalize our customer journeys to increase satisfaction & loyalty of our expansion recognized by industry leaders.

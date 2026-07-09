@@ -37,7 +37,7 @@ export default function Navigation() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 pt-3 px-4 pointer-events-none">
       <nav
-        className={`mx-auto flex max-w-7xl items-center justify-between rounded-full bg-white px-6 py-3 shadow-md transition-all duration-300 md:px-8 pointer-events-auto border border-slate-100 ${scrolled ? 'shadow-lg bg-white/95 backdrop-blur-md' : ''
+        className={`mx-auto flex max-w-7xl items-center justify-between rounded-full bg-white px-6 py-1 shadow-md transition-all duration-300 md:px-8 pointer-events-auto border border-slate-100 ${scrolled ? 'shadow-lg bg-white/95 backdrop-blur-md' : ''
           }`}
       >
         {/* Logo */}

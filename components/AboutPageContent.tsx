@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, Variants } from 'framer-motion';
-import { Target, ShieldCheck, Factory, Award, CheckCircle2, Lightbulb, Shield, Star, Handshake, Globe, Scissors, Briefcase } from 'lucide-react';
+import { Target, ShieldCheck, Factory, Award, CheckCircle2, Lightbulb, Shield, Star, Handshake, Globe, Scissors, Briefcase, Users } from 'lucide-react';
 import Image from 'next/image';
 
 const fadeUp: Variants = {
@@ -126,6 +126,76 @@ export default function AboutPageContent() {
               </motion.div>
             </motion.div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* The Process & Philosophy Section */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeUp}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">Our Process & Philosophy</h2>
+            <p className="text-xl text-muted-foreground">
+              Built on strong ethical principles and a dedication to quality, innovation, and sustainable development.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: 'Business Operations',
+                icon: Briefcase,
+                desc: 'We specialize in the local sale of premium fabric brands. We purchase yarn and process it through specialized job work under strict supervision and our own quality control team to achieve world-class quality. We proudly supply major brands including Raymond’s, Arvind Mills, Blackberry, Future Lifestyles, and Van Heusen. We are now expanding our reach in the Indian market through an online platform for both fabric and garments.'
+              },
+              {
+                title: 'Innovation & Sustainability',
+                icon: Lightbulb,
+                desc: 'We combine creativity and technology to produce innovative solutions that anticipate the needs of the textile market. This approach has strengthened our market leadership globally. Our value system is highly product and market-oriented, enhanced by our desire to promote a model of sustainable and responsible development.'
+              },
+              {
+                title: 'Ethics & Integrity',
+                icon: Shield,
+                desc: 'We align all our activities with ethical principles and values formally adopted by our Board of Directors. At StyleFab, we are convinced that the achievement of our business aims cannot be deemed successful without respecting these fundamental values.'
+              },
+              {
+                title: 'Team Excellence',
+                icon: Users,
+                desc: 'Our dedicated team at StyleFab innovates and excels in the manufacturing of blended suiting fabrics. We adhere to the highest quality standards to consistently satisfy and exceed our customers’ demands.'
+              },
+              {
+                title: 'Our Ambition',
+                icon: Target,
+                desc: 'We are striving to create a prominent place for ourselves as a dynamic, fashion-conscious fabric producer of the new era, constantly meeting and exceeding international quality standards.'
+              },
+              {
+                title: 'Production Scale',
+                icon: Factory,
+                desc: 'To meet the growing demand for our premium textiles, StyleFab is targeting the production of approximately 200,000 meters a month of poly-viscose and poly-viscose-stretch fabrics specifically designed for men’s wear.'
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                className="bg-slate-50 dark:bg-slate-900/40 border border-border p-8 rounded-3xl group hover:border-primary/50 hover:shadow-xl transition-all duration-300 flex flex-col"
+              >
+                <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+                  <item.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-4">{item.title}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm lg:text-base">
+                  {item.desc}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

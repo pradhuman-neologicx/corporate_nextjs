@@ -98,10 +98,10 @@ export default function Hero() {
                 <motion.div
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group flex items-center justify-between sm:justify-start gap-4 rounded-full border-2 border-slate-200 bg-white/50 backdrop-blur-sm py-2.5 pl-8 pr-2.5 text-[15px] font-bold text-foreground transition-all hover:border-primary hover:bg-white cursor-pointer"
+                  className="group flex items-center justify-between sm:justify-start gap-4 rounded-full border-2 border-border bg-background/50 backdrop-blur-sm py-2.5 pl-8 pr-2.5 text-[15px] font-bold text-foreground transition-all hover:border-primary hover:bg-card cursor-pointer"
                 >
                   Explore Products
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-foreground transition-transform group-hover:-translate-y-[2px] group-hover:translate-x-[2px] group-hover:bg-primary group-hover:text-white">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-muted text-foreground transition-transform group-hover:-translate-y-[2px] group-hover:translate-x-[2px] group-hover:bg-primary group-hover:text-primary-foreground">
                     <ArrowUpRight className="h-5 w-5" strokeWidth={2.5} />
                   </div>
                 </motion.div>

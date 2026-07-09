@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Trophy, Headphones, Package, ArrowUpRight, Lightbulb, Users, BarChart3, Plus, CheckCircle2, TrendingUp, Phone } from 'lucide-react';
+import { Trophy, Headphones, Package, ArrowUpRight, Lightbulb, Users, BarChart3, Plus, CheckCircle2, TrendingUp, Phone, Factory, Globe } from 'lucide-react';
 import SectionWrapper from './SectionWrapper';
 import Link from 'next/link';
 
@@ -33,9 +33,9 @@ export default function AboutSection() {
             className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border"
           >
             <Trophy className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
-            <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">Award-Winning Expertise</h3>
+            <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">10+ Years of Excellence</h3>
             <p className="text-muted-foreground group-hover:text-gray-100 transition-colors duration-500 ease-out leading-relaxed">
-              Recognized by industry leaders, our award-winning team has a proven record of delivering excellence across projects.
+              With over a decade of operational excellence, we have established ourselves as a trusted partner for premium woven fabrics.
             </p>
           </motion.div>
 
@@ -50,10 +50,10 @@ export default function AboutSection() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border-2 border-dashed border-primary/30 text-primary font-bold text-xs tracking-[0.2em] uppercase mb-6 self-start">
               <Package className="w-4 h-4" />
-              Choose the best
+              End-to-End Excellence
             </div>
             <h2 className="text-4xl lg:text-5xl leading-[1.1] font-bold text-foreground mb-8">
-              Solutions Built for<br />Business.
+              Premium Solutions Built for <br />Global Apparel.
             </h2>
             <Link href="/about" className="self-start inline-flex items-center gap-3 bg-primary text-primary-foreground px-7 py-3.5 rounded-full font-semibold hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/20">
               Learn More
@@ -72,10 +72,10 @@ export default function AboutSection() {
             variants={fadeUpVariants}
             className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border"
           >
-            <Users className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
-            <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">Expert Team</h3>
+            <Globe className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
+            <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">30+ Countries Presence</h3>
             <p className="text-muted-foreground group-hover:text-gray-100 transition-colors duration-500 ease-out leading-relaxed">
-              Our team is always available to address your concerns, providing quick and effective solutions to keep you competitive in the marketplace.
+              Export network spanning key regions including the US, UK, China, Australia, Europe and a well-established PAN India distribution.
             </p>
           </motion.div>
 
@@ -88,10 +88,10 @@ export default function AboutSection() {
             variants={fadeUpVariants}
             className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border"
           >
-            <Headphones className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
-            <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">Dedicated Support</h3>
+            <Factory className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
+            <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">State-of-the-Art Manufacturing</h3>
             <p className="text-muted-foreground group-hover:text-gray-100 transition-colors duration-500 ease-out leading-relaxed">
-              Our support team is always on standby to resolve your queries, providing quick and effective assistance for your business.
+              Fully integrated approach ensuring complete quality control from premium yarn selection to finishing treatments and packing.
             </p>
           </motion.div>
 
@@ -104,10 +104,10 @@ export default function AboutSection() {
             variants={fadeUpVariants}
             className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border"
           >
-            <Lightbulb className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
-            <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">Innovative Solutions</h3>
+            <Users className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
+            <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">Customer-Centric Approach</h3>
             <p className="text-muted-foreground group-hover:text-gray-100 transition-colors duration-500 ease-out leading-relaxed">
-              We stay ahead of the curve, leveraging cutting-edge technologies and strategies to keep you competitive in a global marketplace.
+              Serving fashion brands, garment manufacturers, retailers, and sourcing partners with collections combining quality, innovation, and relevance.
             </p>
           </motion.div>
 
@@ -132,8 +132,8 @@ export default function AboutSection() {
               <BarChart3 className="w-7 h-7 text-primary-foreground stroke-[1.5]" />
             </div>
             <div className="relative z-10 mt-auto">
-              <p className="text-primary-foreground font-medium mb-1">Faster Growth</p>
-              <h3 className="text-6xl font-bold text-white tracking-tight">8.5X</h3>
+              <p className="text-primary-foreground font-medium mb-1">Decades of Expertise</p>
+              <h3 className="text-6xl font-bold text-white tracking-tight">25+</h3>
             </div>
           </motion.div>
         </div>
@@ -168,7 +168,7 @@ export default function AboutSection() {
                     <Plus className="w-4 h-4 lg:w-5 lg:h-5 stroke-[3]" />
                   </div>
                 </div>
-                <p className="text-white font-bold text-lg lg:text-xl leading-snug">We have 100+ happy<br />customers.</p>
+                <p className="text-white font-bold text-lg lg:text-xl leading-snug">Global partnerships<br />across 30+ countries.</p>
               </div>
             </div>
           </motion.div>
@@ -183,7 +183,7 @@ export default function AboutSection() {
               transition={{ duration: 0.6, ease: 'easeOut' }}
               className="text-3xl lg:text-4xl xl:text-[2.75rem] font-bold text-foreground leading-[1.25] tracking-tight"
             >
-              Driven by Purpose, and Fueled by a Relentless Pursuit of Results and Client Success.
+              Built on a strong foundation of quality, innovation, and deep market understanding.
             </motion.h2>
 
             {/* Middle Right: Stats Cards */}
@@ -196,8 +196,8 @@ export default function AboutSection() {
                 className="bg-card rounded-3xl p-6 lg:p-8 border border-border shadow-sm hover:-translate-y-1 transition-transform duration-300"
               >
                 <TrendingUp className="w-8 h-8 text-primary mb-5 stroke-[1.5]" />
-                <h3 className="text-4xl lg:text-5xl font-bold text-foreground mb-3 tracking-tight">20M</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">Meters of fabric produced annually to empower global brands.</p>
+                <h3 className="text-4xl lg:text-5xl font-bold text-foreground mb-3 tracking-tight">200K+</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">Meters of fabric produced monthly to empower global brands.</p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -207,8 +207,8 @@ export default function AboutSection() {
                 className="bg-card rounded-3xl p-6 lg:p-8 border border-border shadow-sm hover:-translate-y-1 transition-transform duration-300"
               >
                 <CheckCircle2 className="w-8 h-8 text-primary mb-5 stroke-[1.5]" />
-                <h3 className="text-4xl lg:text-5xl font-bold text-foreground mb-3 tracking-tight">8.5X</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">Faster turnaround times with our modern textile solutions.</p>
+                <h3 className="text-4xl lg:text-5xl font-bold text-foreground mb-3 tracking-tight">3</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">Premium in-house fabric brands delivering distinct identity and purpose.</p>
               </motion.div>
             </div>
 
@@ -221,12 +221,12 @@ export default function AboutSection() {
               className="mt-2"
             >
               <p className="text-muted-foreground leading-relaxed mb-8 text-base">
-                We recognize that exceptional quality is at the heart of every successful uniform and corporate wear. Our fabric solutions are crafted to help you transform every thread into success.
+                Every fabric developed by StyleFab is guided by a simple philosophy — combining creativity, quality, and market intelligence to deliver products that are commercially relevant, aesthetically refined, and built for long-term value.
               </p>
 
               <div className="flex flex-wrap items-center gap-6 lg:gap-8">
                 <Link href="/about" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3.5 lg:px-7 rounded-full font-semibold hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/20">
-                  Know more us
+                  Know more about us
                   <span className="bg-primary-foreground/20 rounded-full p-1 ml-1">
                     <ArrowUpRight className="w-4 h-4" />
                   </span>
@@ -246,3 +246,4 @@ export default function AboutSection() {
     </>
   );
 }
+

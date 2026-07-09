@@ -7,6 +7,7 @@ import TestimonialCard from '@/components/TestimonialCard'
 import FaqSection from '@/components/FaqSection'
 import CtaSection from '@/components/CtaSection'
 import AboutSection from '@/components/AboutSection'
+import BenefitsSection from '@/components/BenefitsSection'
 import Footer from '@/components/Footer'
 import { Trophy, Headphones, Package, ArrowUpRight, Lightbulb, Users, BarChart3, Plus, Play, CheckCircle2, TrendingUp, Phone } from 'lucide-react'
 
@@ -28,40 +29,40 @@ export const metadata: Metadata = {
 export default function Home() {
   const products = [
     {
-      iconName: 'Scissors',
-      title: 'Wool Suiting Fabric',
-      description:
-        'High-quality wool fabrics designed for premium corporate and institutional uniforms.',
-    },
-    {
       iconName: 'Droplets',
-      title: 'Polyester Viscose',
+      title: 'Poly-Viscose Blends',
       description:
-        'Durable and comfortable poly-viscose blends perfect for everyday corporate wear.',
+        'A versatile 65/35 mix delivering improved comfort, high durability, colour fastness and easy care.',
     },
     {
-      iconName: 'Award',
-      title: 'Polyester Wool',
+      iconName: 'Wind',
+      title: 'P/V Linen Blends',
       description:
-        'Specialty blends combining the durability of polyester with the luxury of wool.',
+        'Machine washable and easy-care blends that retain linen\'s natural breathability and comfort.',
     },
     {
       iconName: 'Activity',
-      title: 'Viscose Elastane',
+      title: 'P/V Lycra Blends',
       description:
-        'Flexible and comfortable fabrics crafted for dynamic, fashion-conscious producers.',
+        'Premium stretch fabrics offering durability, comfort, fit and complete freedom of movement.',
     },
     {
-      iconName: 'Feather',
-      title: 'Wool Elastane',
+      iconName: 'Leaf',
+      title: 'Poly-Bamboo Blends',
       description:
-        'Premium stretchable wool fabrics designed to meet international standards.',
+        'Eco-friendly blends featuring very high absorbency and natural, long-lasting bacterial resistance.',
     },
     {
-      iconName: 'Layers',
-      title: 'Man Made & Blended Fabrics',
+      iconName: 'ShieldCheck',
+      title: 'Performance Finishes',
       description:
-        'A wide range of pre-dominantly fibre dyed blended fabrics for men’s and women’s wear.',
+        'Advanced treatments including Teflon® water repellent finishes and anti-odour Nano technology.',
+    },
+    {
+      iconName: 'Palette',
+      title: 'Fibre Dyed Fabrics',
+      description:
+        'Fabrics dyed at the fibre stage for excellent continuity, deep penetration and high colour fastness.',
     },
   ]
 
@@ -90,6 +91,8 @@ export default function Home() {
           ))}
         </div>
       </SectionWrapper>
+
+      <BenefitsSection />
 
       <FaqSection />
 

@@ -11,28 +11,40 @@ const fadeUp: Variants = {
 
 const products = [
   {
-    title: 'Wool Suiting Fabric',
-    description: 'High-quality wool fabrics designed for premium corporate and institutional uniforms. Our wool suiting fabrics offer unmatched durability, breathability, and an impeccable drape, making them the preferred choice for executive wear.',
-    features: ['100% Pure & Blended Wool', 'Exceptional Drape', 'All-weather Comfort'],
-    image: '/prod_wool.png',
+    title: 'Poly-Viscose (T/R) Blends',
+    description: 'StyleFab manufactures fabrics with spun yarns having an intimate blending of polyester and viscose staple fibres. In a 65% polyester / 35% viscose mix, this versatile combination creates a wide range of applications — delivering improved comfort, durability, colour fastness and easy care.',
+    features: ['Improved Comfort', 'High Durability', 'Easy Care'],
+    image: '/poly_viscose_blends.png',
   },
   {
-    title: 'Polyester Viscose',
-    description: 'Durable and comfortable poly-viscose blends perfect for everyday corporate wear. This versatile fabric combines the strength of polyester with the smooth texture of viscose, ensuring your team looks professional throughout the day with minimal maintenance.',
-    features: ['Wrinkle Resistant', 'Easy Care', 'Cost-Effective Durability'],
-    image: '/prod_poly_viscose.png',
+    title: 'P/V Linen Blends',
+    description: 'Linen enjoys a privileged position in the fashion industry. StyleFab has developed a blend of linen with poly-viscose that makes the fabric machine washable and easy-care, while retaining linen\'s natural comfort.',
+    features: ['Natural Comfort', 'Machine Washable', 'Easy-care'],
+    image: '/pv_linen_blends.png',
   },
   {
-    title: 'Polyester Wool',
-    description: 'The perfect balance of luxury and practicality. Our poly-wool blends provide the elegant finish of wool with the enhanced durability of polyester, ideal for high-end uniforms and tailored suits that stand the test of time.',
-    features: ['Premium Finish', 'High Durability', 'Shape Retention'],
-    image: '/prod_wool.png',
+    title: 'P/V Lycra (Spandex) Blends',
+    description: 'Stretch fabrics are becoming synonymous with comfort. Poly-viscose fabrics blended with INVESTA Lycra® offer durability and easy care alongside style, comfort, fit and freedom of movement. Perfect for casual, formal and semi-formal segments.',
+    features: ['Stretch & Flexibility', 'Shape Retention', 'Casual & Formal Wear'],
+    image: '/pv_lycra_blends.png',
   },
   {
-    title: 'Viscose Elastane',
-    description: 'Designed for the modern professional requiring maximum mobility. By incorporating elastane, this fabric provides a comfortable stretch that adapts to body movements while retaining the softness and breathability of viscose.',
-    features: ['Comfort Stretch', 'Superior Softness', 'Flattering Fit'],
-    image: '/prod_poly_viscose.png',
+    title: 'Poly-Bamboo Blends',
+    description: 'Bamboo fibre is made from bamboo timber matured in the forest for at least four years. The hollowness of the fibre contributes to very high absorbency and enables it to hold dyes effectively. Being naturally anti-bacterial, this blend offers long-lasting bacterial resistance.',
+    features: ['High Absorbency', 'Anti-bacterial', 'Eco-friendly'],
+    image: '/poly_bamboo_blends.png',
+  },
+  {
+    title: 'Performance Finishes',
+    description: 'We offer advanced nano-technology treatments including Teflon® Water, Oil & Stain Repellent Finish by Huntsman USA, which forms an invisible molecular shield around the fibres without affecting breathability. Other finishes include anti-bacterial, anti-fungal, UV protection, and moisture management.',
+    features: ['Stain Repellent', 'UV Protection', 'Odour Control'],
+    image: '/performance_finishes.png',
+  },
+  {
+    title: 'Fibre Dyed Fabrics',
+    description: 'Fibre dyeing matches and dyes the required colour at the fibre stage itself, producing pre-dyed fabrics with a large dye-lot size (10 to 30 km). This ensures excellent continuity, deep penetration of dye, and superior colour fastness compared to piece-dyed fabrics.',
+    features: ['High Colour Fastness', 'Melange Shades', 'Large Dye-lots'],
+    image: '/fibre_dyed_fabrics.png',
   },
 ];
 
@@ -49,16 +61,16 @@ export default function ProductsPageContent() {
           className="text-center max-w-3xl mx-auto"
         >
           <h1 className="text-4xl md:text-6xl font-black text-foreground tracking-tight leading-[1.1] mb-6">
-            Our Premium <span className="text-primary">Fabrics</span>
+            Explore Our <span className="text-primary">Products</span>
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Discover our extensive range of high-quality fabrics, meticulously crafted to meet international standards for corporate, school, and institutional wear.
+            All qualities are available in a wide range of constructions — plain, gabardine, drill, venetian, herringbone, hopsack, and combinations thereof — with dobby patterns and fancy effects.
           </p>
         </motion.div>
       </div>
 
       {/* Products List */}
-      <div className="max-w-7xl mx-auto px-6 md:px-8 space-y-24 lg:space-y-32">
+      <div className="max-w-7xl mx-auto px-6 md:px-8 space-y-24 lg:space-y-32 mb-24 lg:mb-32">
         {products.map((product, index) => {
           const isEven = index % 2 === 0;
 
@@ -89,10 +101,6 @@ export default function ProductsPageContent() {
                 transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
                 className={`flex flex-col ${isEven ? 'lg:order-2' : 'lg:order-1'}`}
               >
-                {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-bold text-xs tracking-[0.1em] uppercase mb-6 self-start">
-                  Product 0{index + 1}
-                </div> */}
-
                 <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
                   {product.title}
                 </h2>
@@ -112,16 +120,49 @@ export default function ProductsPageContent() {
                   ))}
                 </ul>
 
-                <button className="self-start group inline-flex items-center gap-2 bg-foreground text-background px-7 py-3.5 rounded-full font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                <Link href="/contact" className="self-start group inline-flex items-center gap-2 bg-foreground text-background px-7 py-3.5 rounded-full font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                   Request Sample
                   <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-                </button>
+                </Link>
               </motion.div>
 
             </div>
           );
         })}
       </div>
+
+      {/* Brand Images */}
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeUp}
+          className="text-center max-w-3xl mx-auto mb-12"
+        >
+          <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
+            Brand Images
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            A selection of StyleFab's fabric swatches, showcasing its range of suiting textures, weaves, and checks.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-border"
+        >
+          <img 
+            src="/brand_swatches.png" 
+            alt="Brand Fabric Swatches" 
+            className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
+          />
+        </motion.div>
+      </div>
+
     </div>
   );
 }

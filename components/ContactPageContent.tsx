@@ -22,7 +22,7 @@ export default function ContactPageContent() {
   return (
     <div className="w-full pt-32 pb-24 bg-background">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        
+
         {/* Header */}
         <motion.div
           initial="hidden"
@@ -80,88 +80,94 @@ export default function ContactPageContent() {
             </div>
             <h4 className="text-xl font-bold text-foreground mb-4">Email Us</h4>
             <p className="text-muted-foreground leading-relaxed">
-              <a href="mailto:info@stylefab.com" className="hover:text-primary transition-colors font-medium">info@stylefab.com</a><br/>
+              <a href="mailto:info@stylefab.com" className="hover:text-primary transition-colors font-medium">info@stylefab.com</a><br />
               <span className="text-sm opacity-80 mt-2 block">We typically reply within 24 hours</span>
             </p>
           </motion.div>
         </motion.div>
 
-        {/* Full Width Contact Form */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={fadeUp}
-          className="bg-card border border-border p-8 md:p-12 lg:p-16 rounded-[2.5rem] shadow-2xl max-w-5xl mx-auto"
-        >
-          <div className="text-center mb-10">
-            <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Send us a message</h3>
-            <p className="text-lg text-muted-foreground">Please fill out the form below and our team will get back to you shortly.</p>
-          </div>
-            
-          <form className="space-y-8">
-            <div className="space-y-4">
-              <div className="space-y-1.5">
-                <label className="text-sm font-semibold text-foreground">Subject <span className="text-red-500">*</span></label>
-                <input type="text" className="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
-              </div>
-              <div className="space-y-1.5">
-                <label className="text-sm font-semibold text-foreground">Message <span className="text-red-500">*</span></label>
-                <textarea rows={5} className="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none" />
-              </div>
+        <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto mb-16 lg:mb-24">
+          {/* Map Section */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeUp}
+            className="rounded-[2.5rem] overflow-hidden border border-border shadow-2xl bg-card h-[400px] lg:h-auto flex"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.7739691755983!2d72.8508856!3d19.1613689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7869277e78b%3A0xa700c910695f5956!2sStylefab%20Private%20Limited!5e0!3m2!1sen!2sin!4v1783573947823!5m2!1sen!2sin"
+              className="w-full h-full border-0"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </motion.div>
+
+          {/* Contact Form */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeUp}
+            className="bg-card border border-border p-8 md:p-10 lg:p-12 rounded-[2.5rem] shadow-2xl h-full"
+          >
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-foreground mb-3">Send us a message</h3>
+              <p className="text-muted-foreground">Please fill out the form below and our team will get back to you shortly.</p>
             </div>
 
-            <div className="pt-4 pb-2 border-t border-border">
-              <h4 className="font-bold text-foreground text-xl">Personal Information</h4>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-x-6 gap-y-5">
-              <div className="space-y-1.5">
-                <label className="text-sm font-semibold text-foreground">Name <span className="text-red-500">*</span></label>
-                <input type="text" className="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
-              </div>
-              <div className="space-y-1.5">
-                <label className="text-sm font-semibold text-foreground">Email <span className="text-red-500">*</span></label>
-                <input type="email" className="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
-              </div>
-              
-              <div className="space-y-1.5">
-                <label className="text-sm font-semibold text-foreground">Company</label>
-                <input type="text" className="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
-              </div>
-              <div className="space-y-1.5">
-                <label className="text-sm font-semibold text-foreground">Country</label>
-                <input type="text" className="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
+            <form className="space-y-6">
+              <div className="space-y-4">
+                <div className="space-y-1.5">
+                  <label className="text-sm font-semibold text-foreground">Subject <span className="text-red-500">*</span></label>
+                  <input type="text" className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
+                </div>
+                <div className="space-y-1.5">
+                  <label className="text-sm font-semibold text-foreground">Message <span className="text-red-500">*</span></label>
+                  <textarea rows={4} className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none" />
+                </div>
               </div>
 
-              <div className="space-y-1.5">
-                <label className="text-sm font-semibold text-foreground">Phone <span className="text-red-500">*</span></label>
-                <input type="tel" className="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
-              </div>
-              <div className="space-y-1.5">
-                <label className="text-sm font-semibold text-foreground">Fax</label>
-                <input type="text" className="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
+              <div className="pt-4 pb-2 border-t border-border">
+                <h4 className="font-bold text-foreground text-lg">Personal Information</h4>
               </div>
 
-              <div className="space-y-1.5 md:col-span-2">
-                <label className="text-sm font-semibold text-foreground">Address</label>
-                <input type="text" className="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
-              </div>
-              <div className="space-y-1.5 md:col-span-2">
-                <label className="text-sm font-semibold text-foreground">Business Details</label>
-                <textarea rows={3} className="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none" />
-              </div>
-            </div>
+              <div className="grid md:grid-cols-2 gap-x-4 gap-y-4">
+                <div className="space-y-1.5">
+                  <label className="text-sm font-semibold text-foreground">Name <span className="text-red-500">*</span></label>
+                  <input type="text" className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
+                </div>
+                <div className="space-y-1.5">
+                  <label className="text-sm font-semibold text-foreground">Email <span className="text-red-500">*</span></label>
+                  <input type="email" className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
+                </div>
 
-            <button 
-              type="button" 
-              className="w-full mt-8 group inline-flex items-center justify-center gap-2 bg-foreground text-background px-7 py-4 rounded-xl font-bold text-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-            >
-              Submit Request
-              <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
-            </button>
-          </form>
-        </motion.div>
+                <div className="space-y-1.5">
+                  <label className="text-sm font-semibold text-foreground">Company</label>
+                  <input type="text" className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
+                </div>
+                <div className="space-y-1.5">
+                  <label className="text-sm font-semibold text-foreground">Phone <span className="text-red-500">*</span></label>
+                  <input type="tel" className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
+                </div>
+
+                <div className="space-y-1.5 md:col-span-2">
+                  <label className="text-sm font-semibold text-foreground">Business Details</label>
+                  <textarea rows={2} className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none" />
+                </div>
+              </div>
+
+              <button
+                type="button"
+                className="w-full mt-6 group inline-flex items-center justify-center gap-2 bg-foreground text-background px-7 py-3.5 rounded-xl font-bold text-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              >
+                Submit Request
+                <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
+              </button>
+            </form>
+          </motion.div>
+        </div>
       </div>
     </div>
   );

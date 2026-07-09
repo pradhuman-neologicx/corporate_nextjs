@@ -49,7 +49,7 @@ export default function Hero() {
           >
             <Box className="w-5 h-5 text-primary" strokeWidth={2.5} />
             <span className="text-primary font-bold text-sm tracking-widest uppercase">
-              Renowned Growth Company
+              Premium Menswear Fabrics
             </span>
           </motion.div>
 
@@ -60,7 +60,7 @@ export default function Hero() {
             animate="visible"
             className="text-5xl md:text-7xl lg:text-[80px]  font-bold text-foreground leading-[1.1] tracking-tight"
           >
-            Leading Future for Corporate Business.
+            Redefining Premium Fabrics Through Innovation.
           </motion.h1>
 
           <motion.p
@@ -70,7 +70,7 @@ export default function Hero() {
             animate="visible"
             className="mt-8 text-lg text-muted-foreground max-w-lg leading-relaxed font-medium"
           >
-            Committed to delivering innovative solutions that elevate your brand and accelerate enterprise growth across all sectors.
+            A diversified textile enterprise dedicated to creating premium fabric solutions for the global apparel industry, built on a strong foundation of quality and deep market understanding.
           </motion.p>
 
           <motion.div
@@ -80,21 +80,36 @@ export default function Hero() {
             animate="visible"
             className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-8"
           >
-            <Link href="/products" className="inline-block">
-              <motion.div
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="group flex items-center gap-4 rounded-full bg-primary py-3 pl-8 pr-3 text-[15px] font-bold text-white transition-all hover:bg-primary/90 cursor-pointer"
-              >
-                Explore Products
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0A3C38] transition-transform group-hover:-translate-y-[2px] group-hover:translate-x-[2px]">
-                  <ArrowUpRight className="h-5 w-5 text-white" strokeWidth={2.5} />
-                </div>
-              </motion.div>
-            </Link>
+            <div className="flex flex-col sm:flex-row items-center gap-4">
+              <a href="/STYLEFAB Digital Brochure.....pdf" target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
+                <motion.div
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group flex items-center justify-between sm:justify-start gap-4 rounded-full bg-primary py-3 pl-8 pr-3 text-[15px] font-bold text-white transition-all hover:bg-primary/90 cursor-pointer"
+                >
+                  Download Brochure
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0A3C38] transition-transform group-hover:-translate-y-[2px] group-hover:translate-x-[2px]">
+                    <ArrowUpRight className="h-5 w-5 text-white" strokeWidth={2.5} />
+                  </div>
+                </motion.div>
+              </a>
+
+              <Link href="/products" className="inline-block w-full sm:w-auto">
+                <motion.div
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group flex items-center justify-between sm:justify-start gap-4 rounded-full border-2 border-slate-200 bg-white/50 backdrop-blur-sm py-2.5 pl-8 pr-2.5 text-[15px] font-bold text-foreground transition-all hover:border-primary hover:bg-white cursor-pointer"
+                >
+                  Explore Products
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-foreground transition-transform group-hover:-translate-y-[2px] group-hover:translate-x-[2px] group-hover:bg-primary group-hover:text-white">
+                    <ArrowUpRight className="h-5 w-5" strokeWidth={2.5} />
+                  </div>
+                </motion.div>
+              </Link>
+            </div>
 
             {/* Trust Indicator */}
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <div className="flex -space-x-3">
                 <img src="https://i.pravatar.cc/100?img=33" alt="Client" className="w-12 h-12 rounded-full border-2 border-background object-cover" />
                 <img src="https://i.pravatar.cc/100?img=47" alt="Client" className="w-12 h-12 rounded-full border-2 border-background object-cover" />
@@ -113,7 +128,7 @@ export default function Hero() {
                 </div>
                 <span className="text-sm font-semibold text-muted-foreground mt-1">Trusted by Clients</span>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>

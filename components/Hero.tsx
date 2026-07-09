@@ -19,7 +19,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden bg-background">
+    <section className="relative min-h-screen flex items-center pt-28 pb-12 overflow-hidden bg-background">
       {/* Background Image with Gradient Mask */}
       <div className="absolute inset-0 z-0 flex justify-end">
         <div className="w-full lg:w-[60%] h-full relative">

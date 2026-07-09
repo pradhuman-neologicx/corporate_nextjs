@@ -75,7 +75,7 @@ export default function AboutSection() {
             <Globe className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
             <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">30+ Countries Presence</h3>
             <p className="text-muted-foreground group-hover:text-gray-100 transition-colors duration-500 ease-out leading-relaxed">
-              Export network spanning key regions including the US, UK, China, Australia, Europe and a well-established PAN India distribution.
+              Export network spanning key regions including the <strong>US, UK, China, Australia, Europe</strong> and a well-established <strong>PAN India</strong> distribution.
             </p>
           </motion.div>
 
@@ -221,7 +221,7 @@ export default function AboutSection() {
               className="mt-2"
             >
               <p className="text-muted-foreground leading-relaxed mb-8 text-base">
-                Every fabric developed by StyleFab is guided by a simple philosophy — combining creativity, quality, and market intelligence to deliver products that are commercially relevant, aesthetically refined, and built for long-term value.
+                Every fabric developed by <strong>StyleFab</strong> is guided by a simple philosophy — combining creativity, quality, and market intelligence to deliver products that are commercially relevant, aesthetically refined, and built for long-term value.
               </p>
 
               <div className="flex flex-wrap items-center gap-6 lg:gap-8">

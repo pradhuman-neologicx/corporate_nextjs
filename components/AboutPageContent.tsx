@@ -107,13 +107,13 @@ export default function AboutPageContent() {
 
               <motion.div variants={fadeUp} className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  StyleFab Private Limited is dedicated to creating premium fabric solutions, built on a strong foundation of quality, innovation, and deep market understanding. With over a decade of operational excellence, we are a trusted partner for delivering high-quality woven fabrics tailored specifically for menswear.
+                  <strong>StyleFab</strong> Private Limited is dedicated to creating premium fabric solutions, built on a strong foundation of quality, innovation, and deep market understanding. With over a decade of operational excellence, we are a trusted partner for delivering high-quality woven fabrics tailored specifically for menswear.
                 </p>
                 <p>
                   The company specializes in fabric development, product innovation, sourcing, and international supply, serving fashion brands, garment manufacturers, retailers, and sourcing partners across domestic and international markets. Our core strength lies in combining traditional textile craftsmanship with modern production techniques.
                 </p>
                 <p>
-                  Every fabric developed by StyleFab is guided by a simple philosophy — combining creativity, quality, and market intelligence to deliver products that are commercially relevant, aesthetically refined, and built for long-term value.
+                  Every fabric developed by <strong>StyleFab</strong> is guided by a simple philosophy — combining creativity, quality, and market intelligence to deliver products that are commercially relevant, aesthetically refined, and built for long-term value.
                 </p>
               </motion.div>
 
@@ -146,7 +146,7 @@ export default function AboutPageContent() {
             <div className="w-full md:w-2/3">
               <h2 className="text-3xl font-bold text-foreground mb-4">Founder's Vision & Expertise</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Under the leadership of Mr. Rohitash Jindal, StyleFab benefits from over 25 years of extensive industry experience. His journey includes working with renowned international brands and major retail chains, giving him deep insights into global fashion trends and quality expectations.
+                Under the leadership of <strong>Mr. Rohitash Jindal</strong>, <strong>StyleFab</strong> benefits from over <strong>25 years</strong> of extensive industry experience. His journey includes working with renowned international brands and major retail chains, giving him deep insights into global fashion trends and quality expectations.
               </p>
               <h3 className="text-xl font-bold text-foreground mb-4">His expertise spans across:</h3>
               <ul className="space-y-3 mb-6">
@@ -183,7 +183,7 @@ export default function AboutPageContent() {
             >
               <h2 className="text-3xl font-bold text-foreground mb-6">End-to-End Manufacturing Excellence</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                At StyleFab, we follow a fully integrated approach to fabric production, ensuring complete control over quality at every stage:
+                At <strong>StyleFab</strong>, we follow a fully integrated approach to fabric production, ensuring complete control over quality at every stage:
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -214,10 +214,10 @@ export default function AboutPageContent() {
             >
               <h2 className="text-3xl font-bold text-foreground mb-6">Global Presence & Who We Serve</h2>
               <p className="text-lg text-muted-foreground mb-2">
-                StyleFab has built a strong international footprint by consistently delivering quality fabrics to global markets. Our export network spans key regions including the United States, United Kingdom, China, Australia, Spain, Colombia, Turkey, and several other countries, complemented by a well-established PAN India distribution network.
+                <strong>StyleFab</strong> has built a strong international footprint by consistently delivering quality fabrics to global markets. Our export network spans key regions including the <strong>United States, United Kingdom, China, Australia, Spain, Colombia, Turkey, and several other countries</strong>, complemented by a well-established <strong>PAN India</strong> distribution network.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                By understanding the unique requirements of each customer segment, StyleFab develops fabric collections that combine quality, innovation, and commercial relevance.              </p>
+                By understanding the unique requirements of each customer segment, <strong>StyleFab</strong> develops fabric collections that combine quality, innovation, and commercial relevance.              </p>
               <h3 className="text-xl font-bold text-foreground mb-4">We work with:</h3>
               <div className="flex flex-wrap gap-3">
                 {['Fashion Brands', 'Garment Manufacturers', 'Apparel Retailers', 'Export Houses', 'Wholesalers & Distributors', 'Sourcing Partners'].map((partner, i) => (
@@ -245,7 +245,7 @@ export default function AboutPageContent() {
           >
             <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">Our Brand Portfolio</h2>
             <p className="text-xl text-muted-foreground">
-              StyleFab Private Limited has developed a portfolio of premium fabric brands, each created with a distinct identity and purpose to serve different customer segments.
+              <strong>StyleFab</strong> Private Limited has developed a portfolio of premium fabric brands, each created with a distinct identity and purpose to serve different customer segments.
             </p>
           </motion.div>
 

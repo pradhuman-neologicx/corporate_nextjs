@@ -65,10 +65,10 @@ export default function Navigation() {
 
         {/* Right Actions (Desktop) */}
         <div className="hidden lg:flex items-center gap-6 flex-shrink-0">
-          <a href="tel:18884521505" className="flex items-center gap-2 font-bold text-slate-800 hover:text-primary transition-colors">
+          <a href="tel:+919619808222" className="flex items-center gap-2 font-bold text-slate-800 hover:text-primary transition-colors">
             <Phone className="h-4 w-4 text-primary" strokeWidth={2.5} />
             <span className="underline decoration-slate-300 underline-offset-4 hover:decoration-primary">
-              1-888-452-1505
+              +91 96198 08222
             </span>
           </a>
 
@@ -147,14 +147,14 @@ export default function Navigation() {
                 <div className="space-y-5">
                   <div>
                     <p className="text-slate-400 text-sm mb-1">Phone</p>
-                    <a href="tel:+919600000022" className="text-white font-medium hover:text-primary transition-colors">
-                      +91 96XXXXXX22
+                    <a href="tel:+919619808222" className="text-white font-medium hover:text-primary transition-colors">
+                      +91 96198 08222
                     </a>
                   </div>
                   <div>
                     <p className="text-slate-400 text-sm mb-1">Email</p>
-                    <a href="mailto:info@stylefab.com" className="text-white font-medium hover:text-primary transition-colors">
-                      info@stylefab.com
+                    <a href="mailto:Rohitash.jindal@stylefab.Co.in" className="text-white font-medium hover:text-primary transition-colors">
+                      Rohitash.jindal@stylefab.Co.in
                     </a>
                   </div>
                   <div>
@@ -211,9 +211,9 @@ export default function Navigation() {
                 </Link>
               ))}
               <div className="mt-6 flex flex-col gap-4">
-                <a href="tel:18884521505" className="flex items-center justify-center gap-2 text-[15px] font-bold text-slate-800">
+                <a href="tel:+919619808222" className="flex items-center justify-center gap-2 text-[15px] font-bold text-slate-800">
                   <Phone className="h-4 w-4 text-primary" strokeWidth={2.5} />
-                  1-888-452-1505
+                  +91 96198 08222
                 </a>
                 <Link
                   href="/contact"

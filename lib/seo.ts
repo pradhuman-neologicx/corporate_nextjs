@@ -1,25 +1,27 @@
 import { Metadata } from 'next'
 
 export const baseMetadata: Metadata = {
-  title: 'Premium Corporate Solutions | Enterprise Services',
-  description: 'Transform your business with innovative enterprise solutions designed for modern companies. 500+ clients trust our expertise.',
+  title: 'StyleFab Private Limited | Premium Menswear Fabrics',
+  description: 'StyleFab Private Limited is a diversified textile enterprise dedicated to creating premium fabric solutions for the global apparel industry, built on a strong foundation of quality and innovation.',
   generator: 'Next.js',
-  applicationName: 'Premium Solutions',
+  applicationName: 'StyleFab',
   keywords: [
-    'enterprise solutions',
-    'digital transformation',
-    'business consulting',
-    'corporate services',
-    'enterprise technology',
+    'premium fabrics',
+    'menswear',
+    'suiting fabrics',
+    'textile manufacturer',
+    'poly-viscose blends',
+    'woven fabrics',
+    'StyleFab',
   ],
   authors: [
     {
-      name: 'Premium Solutions',
-      url: 'https://premium-solutions.com',
+      name: 'StyleFab Private Limited',
+      url: 'https://stylefab.com',
     },
   ],
-  creator: 'Premium Solutions',
-  publisher: 'Premium Solutions',
+  creator: 'StyleFab Private Limited',
+  publisher: 'StyleFab Private Limited',
   formatDetection: {
     email: false,
     address: false,
@@ -28,24 +30,24 @@ export const baseMetadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://premium-solutions.com',
-    title: 'Premium Corporate Solutions | Enterprise Services',
-    description: 'Transform your business with innovative enterprise solutions designed for modern companies.',
+    url: 'https://stylefab.com',
+    title: 'StyleFab Private Limited | Premium Menswear Fabrics',
+    description: 'StyleFab Private Limited is a diversified textile enterprise dedicated to creating premium fabric solutions for the global apparel industry.',
     images: [
       {
-        url: 'https://premium-solutions.com/og-image.jpg',
+        url: 'https://stylefab.com/logoNew.png',
         width: 1200,
         height: 630,
-        alt: 'Premium Solutions',
+        alt: 'StyleFab Private Limited',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Premium Corporate Solutions',
-    description: 'Transform your business with innovative enterprise solutions',
-    creator: '@premiumbrand',
-    images: ['https://premium-solutions.com/twitter-image.jpg'],
+    title: 'StyleFab Private Limited',
+    description: 'StyleFab Private Limited is a diversified textile enterprise dedicated to creating premium fabric solutions for the global apparel industry.',
+    creator: '@stylefab',
+    images: ['https://stylefab.com/logoNew.png'],
   },
   robots: {
     index: true,
@@ -62,36 +64,36 @@ export const baseMetadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://premium-solutions.com',
+    canonical: 'https://stylefab.com',
   },
 }
 
 export const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Premium Solutions',
-  url: 'https://premium-solutions.com',
-  logo: 'https://premium-solutions.com/logo.png',
+  name: 'StyleFab Private Limited',
+  url: 'https://stylefab.com',
+  logo: 'https://stylefab.com/logoNew.png',
   description:
-    'Enterprise solutions provider specializing in digital transformation and business consulting.',
+    'Premium menswear fabric manufacturer serving fashion brands and garment manufacturers globally.',
   sameAs: [
-    'https://www.linkedin.com/company/premium-solutions',
-    'https://twitter.com/premiumbrand',
-    'https://www.facebook.com/premiumbrand',
+    'https://www.linkedin.com/company/stylefab',
+    'https://twitter.com/stylefab',
+    'https://www.facebook.com/stylefab',
   ],
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'Customer Support',
-    telephone: '+1-234-567-890',
-    email: 'info@premium-solutions.com',
+    telephone: '+919619808222',
+    email: 'Rohitash.jindal@stylefab.Co.in',
   },
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '123 Business Ave',
-    addressLocality: 'Tech City',
-    addressRegion: 'TC',
-    postalCode: '12345',
-    addressCountry: 'US',
+    streetAddress: '509, Corporate Annexe, Sonawala Road',
+    addressLocality: 'Goregaon East, Mumbai',
+    addressRegion: 'MH',
+    postalCode: '400063',
+    addressCountry: 'IN',
   },
 }
 
@@ -99,11 +101,11 @@ export const schemaMarkup = (pageType: 'home' | 'about' | 'service') => {
   const baseSchema = {
     '@context': 'https://schema.org',
     '@type': pageType === 'home' ? 'WebSite' : pageType === 'about' ? 'AboutPage' : 'Service',
-    name: 'Premium Solutions',
-    url: 'https://premium-solutions.com',
+    name: 'StyleFab Private Limited',
+    url: 'https://stylefab.com',
     creator: {
       '@type': 'Organization',
-      name: 'Premium Solutions',
+      name: 'StyleFab Private Limited',
     },
   }
 

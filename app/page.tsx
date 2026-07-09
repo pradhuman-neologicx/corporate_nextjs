@@ -12,17 +12,17 @@ import Footer from '@/components/Footer'
 import { Trophy, Headphones, Package, ArrowUpRight, Lightbulb, Users, BarChart3, Plus, Play, CheckCircle2, TrendingUp, Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'STYLEFAB PRIVATE LIMITED',
-  description: 'Transform your business with innovative enterprise solutions designed for modern companies. 500+ clients trust our expertise.',
+  title: 'STYLEFAB PRIVATE LIMITED | Premium Menswear Fabrics',
+  description: 'StyleFab Private Limited is a diversified textile enterprise dedicated to creating premium fabric solutions for the global apparel industry.',
   openGraph: {
-    title: 'Premium Corporate Solutions',
-    description: 'Transform your business with innovative enterprise solutions',
+    title: 'STYLEFAB PRIVATE LIMITED | Premium Menswear Fabrics',
+    description: 'StyleFab Private Limited is a diversified textile enterprise dedicated to creating premium fabric solutions for the global apparel industry.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Premium Corporate Solutions',
-    description: 'Transform your business with innovative enterprise solutions',
+    title: 'STYLEFAB PRIVATE LIMITED | Premium Menswear Fabrics',
+    description: 'StyleFab Private Limited is a diversified textile enterprise dedicated to creating premium fabric solutions for the global apparel industry.',
   },
 }
 

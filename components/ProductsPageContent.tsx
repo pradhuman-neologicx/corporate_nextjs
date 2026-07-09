@@ -11,24 +11,26 @@ const fadeUp: Variants = {
 };
 
 const swatches = [
-  '/products/0T1A3819.jpg.jpeg',
-  '/products/U2R (26).jpg.jpeg',
-  '/products/U2R (27).jpg.jpeg',
-  '/products/W1050_-_Web_03.jpg.jpeg',
-  '/products/W1100_3.jpg.jpeg',
-  '/products/W1128_SECOND.jpg.jpeg',
-  '/products/W1147_SECOND.jpg.jpeg',
-  '/products/W1156_2.jpg.jpeg',
-  '/products/W1169_2.jpg.jpeg',
-  '/products/W1333(1) (1).jpg.jpeg',
-  '/products/W1333(1).jpg.jpeg',
-  '/products/Wool 1.jpg.jpeg',
-  '/products/Wool 2.jpg.jpeg',
-  '/products/Wool 3.jpg.jpeg',
-  '/products/Wool 4.jpg.jpeg',
-  '/products/Wool 5.jpg.jpeg',
-  '/products/Wool 6.jpg.jpeg',
-  '/products/Wool 7.jpg.jpeg',
+  { image: '/products/0T1A3819.jpg.jpeg', name: 'Premium Suiting 0T1A' },
+  { image: '/products/U2R (26).jpg.jpeg', name: 'Check Suiting U2R-26' },
+  { image: '/products/U2R (27).jpg.jpeg', name: 'Check Suiting U2R-27' },
+  { image: '/products/W1050_-_Web_03.jpg.jpeg', name: 'Textured Weave W1050' },
+  { image: '/products/W1100_3.jpg.jpeg', name: 'Classic Suiting W1100' },
+  { image: '/products/W1128_SECOND.jpg.jpeg', name: 'Premium Weave W1128' },
+  { image: '/products/W1147_SECOND.jpg.jpeg', name: 'Check Pattern W1147' },
+  { image: '/products/W1156_2.jpg.jpeg', name: 'Textured Weave W1156' },
+  { image: '/products/W1169_2.jpg.jpeg', name: 'Classic Weave W1169' },
+  { image: '/products/W1333(1) (1).jpg.jpeg', name: 'Premium Check W1333' },
+  { image: '/products/W1333(1).jpg.jpeg', name: 'Classic Check W1333' },
+  { image: '/products/Wool 1.jpg.jpeg', name: 'Premium Wool Blend 1' },
+  { image: '/products/Wool 2.jpg.jpeg', name: 'Premium Wool Blend 2' },
+  { image: '/products/Wool 3.jpg.jpeg', name: 'Premium Wool Blend 3' },
+  { image: '/products/Wool 4.jpg.jpeg', name: 'Premium Wool Blend 4' },
+  { image: '/products/Wool 5.jpg.jpeg', name: 'Premium Wool Blend 5' },
+  { image: '/products/Wool 6.jpg.jpeg', name: 'Premium Wool Blend 6' },
+  { image: '/products/Wool 7.jpg.jpeg', name: 'Premium Wool Blend 7' },
+  { image: '/products/Wool 8.jpg.jpeg', name: 'Premium Wool Blend 8' },
+  { image: '/products/Wool 9.jpg.jpeg', name: 'Premium Wool Blend 9' },
 ];
 
 const products = [
@@ -100,13 +102,19 @@ export default function ProductsPageContent() {
           {swatches.map((swatch, idx) => (
             <div key={idx} className="relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-border group">
               <Image
-                src={swatch}
-                alt={`Fabric Swatch ${idx + 1}`}
+                src={swatch.image}
+                alt={swatch.name}
                 fill
                 sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 16vw"
                 className="object-cover transform group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
+              
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 pt-12">
+                <p className="text-white text-sm md:text-base font-semibold text-center truncate shadow-black drop-shadow-md">
+                  {swatch.name}
+                </p>
+              </div>
             </div>
           ))}
         </motion.div>

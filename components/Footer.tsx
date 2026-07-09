@@ -62,8 +62,8 @@ export default function Footer() {
               <span className="font-bold">A:</span> 509, Corporate Annexe, Sonawala Road, Near Udyog Bhavan, Goregaon East, Mumbai – 400 063, Maharashtra, India
             </p>
             <div className="space-y-2 mb-6">
-              <p className="text-white text-[15px]"><span className="font-bold">P:</span> +91 96XXXXXX22</p>
-              <p className="text-white text-[15px]"><span className="font-bold">M:</span> info@stylefab.com</p>
+              <p className="text-white text-[15px]"><span className="font-bold">P:</span> +91 96198 08222</p>
+              <p className="text-white text-[15px]"><span className="font-bold">M:</span> Rohitash.jindal@stylefab.Co.in</p>
             </div>
 
           </div>

@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-4">
             <Link href="/" className="flex items-center mb-6">
-              <img src="/logo.png" alt="Stylefab Logo" className="h-12 w-auto object-contain" />
+              <img src="/darklogo.png" alt="Stylefab Logo" className="h-20 w-auto object-contain" />
             </Link>
             <p className="text-slate-400 text-[15px] leading-relaxed mb-8 pr-4">
               Developing personalize our customer journeys to increase satisfaction & loyalty of our expansion recognized by industry leaders.
@@ -72,14 +72,14 @@ export default function Footer() {
       </div>
 
       {/* Marquee Section */}
-      <div className="border-y border-white/10 py-6 mb-8 mt-4 overflow-hidden flex whitespace-nowrap bg-[#0B1716]">
+      {/* <div className="border-y border-white/10 py-6 mb-8 mt-4 overflow-hidden flex whitespace-nowrap bg-[#0B1716]">
         <motion.div
           className="flex items-center font-bold text-6xl md:text-8xl lg:text-[110px] text-transparent tracking-widest uppercase"
           style={{ WebkitTextStroke: '1px rgba(255,255,255,0.15)' }}
           animate={{ x: [0, "-50%"] }}
           transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
         >
-          {/* Duplicate content for seamless infinite scroll */}
+        
           {[...Array(2)].map((_, i) => (
             <div key={i} className="flex items-center gap-10 shrink-0 pr-10">
               <span>Enterprise</span>
@@ -89,7 +89,7 @@ export default function Footer() {
             </div>
           ))}
         </motion.div>
-      </div>
+      </div> */}
 
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-6 md:px-8">

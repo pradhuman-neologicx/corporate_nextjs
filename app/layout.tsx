@@ -15,8 +15,8 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   ...baseMetadata,
   icons: {
-    icon: '/favicon.png',
-    apple: '/apple-icon.png',
+    icon: '/favicon.ico',
+    apple: '/favicon.ico',
   },
 }
 

@@ -3,11 +3,33 @@
 import { motion, Variants } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
 };
+
+const swatches = [
+  '/products/0T1A3819.jpg.jpeg',
+  '/products/U2R (26).jpg.jpeg',
+  '/products/U2R (27).jpg.jpeg',
+  '/products/W1050_-_Web_03.jpg.jpeg',
+  '/products/W1100_3.jpg.jpeg',
+  '/products/W1128_SECOND.jpg.jpeg',
+  '/products/W1147_SECOND.jpg.jpeg',
+  '/products/W1156_2.jpg.jpeg',
+  '/products/W1169_2.jpg.jpeg',
+  '/products/W1333(1) (1).jpg.jpeg',
+  '/products/W1333(1).jpg.jpeg',
+  '/products/Wool 1.jpg.jpeg',
+  '/products/Wool 2.jpg.jpeg',
+  '/products/Wool 3.jpg.jpeg',
+  '/products/Wool 4.jpg.jpeg',
+  '/products/Wool 5.jpg.jpeg',
+  '/products/Wool 6.jpg.jpeg',
+  '/products/Wool 7.jpg.jpeg',
+];
 
 const products = [
   {
@@ -51,9 +73,47 @@ const products = [
 export default function ProductsPageContent() {
   return (
     <div className="w-full pt-32 pb-24 bg-background">
+      {/* Brand Images */}
+      <div className="max-w-7xl mx-auto px-6 md:px-8 mt-5">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeUp}
+          className="text-center max-w-3xl mx-auto mb-12"
+        >
+          <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
+            Premium Fabric Gallery
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Explore our curated selection of signature fabric swatches, showcasing a diverse range of meticulously crafted suiting textures, weaves, and premium patterns.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="grid grid-cols-2 md:grid-cols-3  gap-4 lg:gap-6"
+        >
+          {swatches.map((swatch, idx) => (
+            <div key={idx} className="relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-border group">
+              <Image
+                src={swatch}
+                alt={`Fabric Swatch ${idx + 1}`}
+                fill
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                className="object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
+            </div>
+          ))}
+        </motion.div>
+      </div>
 
       {/* Page Header */}
-      <div className="max-w-7xl mx-auto px-6 md:px-8 mb-20 lg:mb-32">
+      <div className="max-w-7xl mx-auto px-6 md:px-8 mt-20 lg:mt-32">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -86,10 +146,12 @@ export default function ProductsPageContent() {
                 className={`relative rounded-[2rem] overflow-hidden aspect-[4/3] lg:aspect-[1/1] shadow-2xl group ${isEven ? 'lg:order-1' : 'lg:order-2'}`}
               >
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay" />
-                <img
+                <Image
                   src={product.image}
                   alt={product.title}
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
               </motion.div>
 
@@ -131,37 +193,6 @@ export default function ProductsPageContent() {
         })}
       </div>
 
-      {/* Brand Images */}
-      <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={fadeUp}
-          className="text-center max-w-3xl mx-auto mb-12"
-        >
-          <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
-            Brand Images
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            A selection of StyleFab's fabric swatches, showcasing its range of suiting textures, weaves, and checks.
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-border"
-        >
-          <img 
-            src="/brand_swatches.png" 
-            alt="Brand Fabric Swatches" 
-            className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
-          />
-        </motion.div>
-      </div>
 
     </div>
   );

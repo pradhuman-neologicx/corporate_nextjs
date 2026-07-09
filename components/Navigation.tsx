@@ -42,7 +42,7 @@ export default function Navigation() {
       >
         {/* Logo */}
         <Link href="/" className="flex items-center flex-shrink-0">
-          <img src="/logo.png" alt="Stylefab Logo" className="h-12 w-auto object-contain" />
+          <img src="/logoNew.png" alt="Stylefab Logo" className="h-20 w-auto object-contain" />
         </Link>
 
         {/* Desktop Links */}
@@ -126,7 +126,7 @@ export default function Navigation() {
               {/* Header */}
               <div className="flex items-center justify-between mb-8">
                 <Link href="/" className="flex items-center">
-                  <img src="/logo.png" alt="Stylefab Logo" className="h-12 w-auto object-contain" />
+                  <img src="/logoNew.png" alt="Stylefab Logo" className="h-16 w-auto object-contain" />
                 </Link>
                 <button
                   onClick={() => setIsDesktopPanelOpen(false)}

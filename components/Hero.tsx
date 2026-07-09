@@ -19,7 +19,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center pt-28 pb-12 overflow-hidden bg-background">
+    <section className="relative min-h-screen flex items-center pt-32 pb-12 overflow-hidden bg-background">
       {/* Background Image with Gradient Mask */}
       <div className="absolute inset-0 z-0 flex justify-end">
         <div className="w-full lg:w-[60%] h-full relative">
@@ -68,7 +68,7 @@ export default function Hero() {
             variants={fadeUpVariants}
             initial="hidden"
             animate="visible"
-            className="mt-8 text-lg text-muted-foreground max-w-lg leading-relaxed font-medium"
+            className="mt-5 text-lg text-muted-foreground max-w-lg leading-relaxed font-medium"
           >
             A diversified textile enterprise dedicated to creating premium fabric solutions for the global apparel industry, built on a strong foundation of quality and deep market understanding.
           </motion.p>
@@ -78,7 +78,7 @@ export default function Hero() {
             variants={fadeUpVariants}
             initial="hidden"
             animate="visible"
-            className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-8"
+            className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-8"
           >
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <a href="/STYLEFAB Digital Brochure.....pdf" target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">

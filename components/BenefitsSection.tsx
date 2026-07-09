@@ -2,7 +2,17 @@
 
 import { motion, Variants } from 'framer-motion';
 import { ShieldCheck, Activity, Settings, HeartHandshake } from 'lucide-react';
+import Image from 'next/image';
 import SectionWrapper from './SectionWrapper';
+
+const showcaseImages = [
+  '/benefit_suit_1.png',
+  '/benefit_suit_3.png',
+  '/benefit_suit_5.png',
+  '/benefit_suit_6.png',
+  '/benefit_suit_7.png',
+  '/benefit_fabric_4.png',
+];
 
 const benefits = [
   {
@@ -63,6 +73,30 @@ export default function BenefitsSection() {
                 {benefit.description}
               </p>
             </div>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Image Strip Showcase */}
+      <div className="mt-16 grid grid-cols-3 md:grid-cols-6 gap-2 ">
+        {showcaseImages.map((img, idx) => (
+          <motion.div
+            key={idx}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ delay: idx * 0.1, duration: 0.5 }}
+            className="relative aspect-[1/2] md:aspect-[3/5] overflow-hidden bg-muted group shadow-sm rounded-lg"
+          >
+            <Image
+              src={img}
+              alt={`StyleFab Fabric Quality ${idx + 1}`}
+              fill
+              sizes="(max-width: 768px) 25vw, 12.5vw"
+              className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+            />
+            {/* Subtle dark overlay that reveals on hover */}
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
           </motion.div>
         ))}
       </div>

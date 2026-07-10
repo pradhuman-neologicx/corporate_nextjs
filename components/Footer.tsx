@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Box, Facebook, Instagram, Twitter, Linkedin, Clock, ArrowUp, Award } from 'lucide-react'
+import { Box, Facebook, Instagram, Twitter, Linkedin, Clock, ArrowUp, Award, MapPin, Phone, Mail } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 export default function Footer() {
@@ -58,12 +58,21 @@ export default function Footer() {
           {/* Our Office */}
           <div className="lg:col-span-3">
             <h4 className="font-bold text-lg mb-6">Our Office</h4>
-            <p className="text-white text-[15px] leading-relaxed mb-4">
-              <span className="font-bold">A:</span> 509, Corporate Annexe, Sonawala Road, Near Udyog Bhavan, Goregaon East, Mumbai – 400 063, Maharashtra, India
-            </p>
-            <div className="space-y-2 mb-6">
-              <p className="text-white text-[15px]"><span className="font-bold">P:</span> +91 96198 08222</p>
-              <p className="text-white text-[15px]"><span className="font-bold">M:</span> Rohitash.jindal@stylefab.Co.in</p>
+            <div className="flex items-start gap-2 mb-4">
+              <MapPin className="w-5 h-5 text-white shrink-0 mt-0.5" />
+              <p className="text-white text-[15px] leading-relaxed">
+                509, Corporate Annexe, Sonawala Road, Near Udyog Bhavan, Goregaon East, Mumbai – 400 063, Maharashtra, India
+              </p>
+            </div>
+            <div className="space-y-3 mb-6">
+              <div className="flex items-center gap-2">
+                <Phone className="w-5 h-5 text-white shrink-0" />
+                <p className="text-white text-[15px]">+91 96198 08222</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="w-5 h-5 text-white shrink-0" />
+                <p className="text-white text-[15px]">Rohitash.jindal@stylefab.Co.in</p>
+              </div>
             </div>
 
           </div>

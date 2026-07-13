@@ -20,6 +20,15 @@ const swatches = [
   { image: '/products/Wool 7.jpg.jpeg', name: 'Premium Wool Blend 7' },
   { image: '/products/Wool 8.jpg.jpeg', name: 'Premium Wool Blend 8' },
   { image: '/products/Wool 9.jpg.jpeg', name: 'Premium Wool Blend 9' },
+  { image: '/products/Linen 1.jpg.jpeg', name: 'Pure Linen Blend 1' },
+  { image: '/products/Linen 2.jpg.jpeg', name: 'Pure Linen Blend 2' },
+  { image: '/products/Linen 3.jpg.jpeg', name: 'Pure Linen Blend 3' },
+  { image: '/products/Linen 4.jpg.jpeg', name: 'Pure Linen Blend 4' },
+  { image: '/products/Linen 5.jpg.jpeg', name: 'Pure Linen Blend 5' },
+  { image: '/products/Linen 6.jpg.jpeg', name: 'Pure Linen Blend 6' },
+  { image: '/products/Linen 7.jpg.jpeg', name: 'Pure Linen Blend 7' },
+  { image: '/products/Linen 8.jpg.jpeg', name: 'Pure Linen Blend 8' },
+  { image: '/products/Linen 9.jpg.jpeg', name: 'Pure Linen Blend 9' },
   { image: '/products/0T1A3819.jpg.jpeg', name: 'Premium Suiting 0T1A' },
   { image: '/products/U2R (26).jpg.jpeg', name: 'Check Suiting U2R-26' },
   { image: '/products/U2R (27).jpg.jpeg', name: 'Check Suiting U2R-27' },
@@ -30,7 +39,7 @@ const swatches = [
   { image: '/products/W1156_2.jpg.jpeg', name: 'Textured Weave W1156' },
   { image: '/products/W1169_2.jpg.jpeg', name: 'Classic Weave W1169' },
   { image: '/products/W1333(1) (1).jpg.jpeg', name: 'Premium Check W1333' },
-  { image: '/products/W1333(1).jpg.jpeg', name: 'Classic Check W1333' },
+  { image: '/products/W1333(1).jpg.jpeg', name: 'Classic Beige Stripe' },
 
 ];
 
@@ -39,13 +48,13 @@ const products = [
     title: 'Wool & Wool Blends',
     description: 'Premium wool and wool-blended fabrics offering superior warmth, durability, and a sophisticated drape for formal wear.',
     features: ['Superior Warmth', 'Sophisticated Drape', 'High Durability'],
-    image: '/prod_wool.png',
+    image: '/products/Wool 5.mp4',
   },
   {
     title: '100% Pure Linen',
     description: 'Natural, highly breathable pure linen fabrics that provide exceptional comfort and a distinctively elegant texture.',
     features: ['High Breathability', 'Natural Texture', 'Exceptional Comfort'],
-    image: '/pv_linen_blends.png',
+    image: '/products/Linen 1.jpg.jpeg',
   },
   {
     title: 'P/V Lycra (Spandex) Blends',
@@ -69,7 +78,7 @@ const products = [
     title: 'Performance Finishes',
     description: 'We offer advanced nano-technology treatments including Teflon® Water, Oil & Stain Repellent Finish by Huntsman USA, which forms an invisible molecular shield around the fibres without affecting breathability. Other finishes include anti-bacterial, anti-fungal, UV protection, and moisture management.',
     features: ['Stain Repellent', 'UV Protection', 'Odour Control'],
-    image: '/performance_finishes.png',
+    image: '/performance_suit_finish.png',
   },
   {
     title: 'Fibre Dyed Fabrics',
@@ -128,7 +137,7 @@ export default function ProductsPageContent() {
       </div>
 
       {/* Page Header */}
-      <div className="max-w-7xl mx-auto px-6 md:px-8 mt-20 lg:mt-32">
+      <div className="max-w-7xl mx-auto px-6 md:px-8 mt-20 lg:mt-32 mb-10">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -160,14 +169,25 @@ export default function ProductsPageContent() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className={`relative rounded-[2rem] overflow-hidden aspect-[4/3] lg:aspect-[1/1] shadow-2xl group ${isEven ? 'lg:order-1' : 'lg:order-2'}`}
               >
-                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay" />
-                <Image
-                  src={product.image}
-                  alt={product.title}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover transform group-hover:scale-105 transition-transform duration-700"
-                />
+                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay pointer-events-none" />
+                {product.image.endsWith('.mp4') ? (
+                  <video
+                    src={product.image}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                ) : (
+                  <Image
+                    src={product.image}
+                    alt={product.title}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  />
+                )}
               </motion.div>
 
               {/* Content Column */}

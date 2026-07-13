@@ -29,7 +29,7 @@ export default function ServiceCard({
     >
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       <div className="relative z-10 flex flex-col items-start h-full w-full">
-        <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 mb-6 group-hover:scale-110 group-hover:rotate-3 shadow-sm">
+        <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 mb-6 group-hover:scale-110  shadow-sm">
           {IconComponent && <IconComponent size={28} className="text-primary group-hover:text-white transition-colors duration-500" strokeWidth={2} />}
         </div>
         <h3 className="text-xl lg:text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">{title}</h3>

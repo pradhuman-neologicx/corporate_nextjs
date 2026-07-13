@@ -46,7 +46,7 @@ export default function AboutPageContent() {
               {[
                 'B2B Fabric Solutions',
                 'Global Exports & Wholesale',
-                'Domestic Brands (e.g., Park Avenue)',
+                'Domestic Brands',
                 'Fashion Segments',
                 'Corporate Wear Industry'
               ].map((tag, i) => (

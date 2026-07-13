@@ -228,11 +228,11 @@ export default function PrivacyPolicyContent() {
                 <div className="mt-8 p-8 bg-card border border-border rounded-3xl grid md:grid-cols-2 gap-8">
                   <div>
                     <h4 className="text-foreground font-bold mb-2">Email Address</h4>
-                    <a href="mailto:Rohitash.jindal@stylefab.Co.in" className="text-primary hover:underline font-medium text-lg">Rohitash.jindal@stylefab.Co.in</a>
+                    <a href="mailto:support@stylefab.co.in" className="text-primary hover:underline font-medium text-lg">support@stylefab.co.in</a>
                   </div>
                   <div>
                     <h4 className="text-foreground font-bold mb-2">Telephone Number</h4>
-                    <p className="text-lg">+91 96198 08222</p>
+                    <p className="text-lg">+91 91375 44608</p>
                   </div>
                   <div className="md:col-span-2">
                     <h4 className="text-foreground font-bold mb-2">Postal Address</h4>

@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`bg-background ${inter.variable} ${robotoMono.variable}`}>
+    <html lang="en" className={`dark bg-background ${inter.variable} ${robotoMono.variable}`}>
       <head>
         <Schema />
       </head>

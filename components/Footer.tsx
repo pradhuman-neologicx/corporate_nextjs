@@ -67,11 +67,11 @@ export default function Footer() {
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5 text-white shrink-0" />
-                <p className="text-white text-[15px]">+91 96198 08222</p>
+                <p className="text-white text-[15px]">+91 91375 44608</p>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-white shrink-0" />
-                <p className="text-white text-[15px]">Rohitash.jindal@stylefab.Co.in</p>
+                <p className="text-white text-[15px]">support@stylefab.co.in</p>
               </div>
             </div>
 

@@ -68,7 +68,7 @@ export default function ContactPageContent() {
             </div>
             <h4 className="text-xl font-bold text-foreground mb-4">Call Us</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>Support: <a href="tel:+919619808222" className="hover:text-primary transition-colors font-medium">+91 96198 08222</a></p>
+              <p>Support: <a href="tel:+919619808222" className="hover:text-primary transition-colors font-medium">+91 91375 44608</a></p>
 
             </div>
           </motion.div>
@@ -80,7 +80,7 @@ export default function ContactPageContent() {
             </div>
             <h4 className="text-xl font-bold text-foreground mb-4">Email Us</h4>
             <p className="text-muted-foreground leading-relaxed">
-              <a href="mailto:Rohitash.jindal@stylefab.Co.in" className="hover:text-primary transition-colors font-medium">Rohitash.jindal@stylefab.Co.in</a><br />
+              <a href="mailto:support@stylefab.co.in" className="hover:text-primary transition-colors font-medium">support@stylefab.co.in</a><br />
               <span className="text-sm opacity-80 mt-2 block">We typically reply within 24 hours</span>
             </p>
           </motion.div>

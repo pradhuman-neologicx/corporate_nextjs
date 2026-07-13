@@ -89,7 +89,7 @@ export default function AboutSection() {
             className="group bg-card hover:bg-primary transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 rounded-[2rem] p-8 lg:p-10 border border-border"
           >
             <Factory className="w-12 h-12 text-primary group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-8 stroke-[1.5]" />
-            <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">State-of-the-Art Manufacturing</h3>
+            <h3 className="text-xl font-bold text-foreground group-hover:text-primary-foreground transition-colors duration-500 ease-out mb-4">High Quality Manufacturing</h3>
             <p className="text-muted-foreground group-hover:text-gray-100 transition-colors duration-500 ease-out leading-relaxed">
               Fully integrated approach ensuring complete quality control from premium yarn selection to finishing treatments and packing.
             </p>

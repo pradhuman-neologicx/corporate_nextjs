@@ -39,16 +39,60 @@ export default function AboutPageContent() {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-foreground tracking-tight leading-[1.1] mb-8">
-              Redefining <span className="text-primary">Premium</span> Menswear Fabrics Through <span className="text-primary">Innovation</span> & Excellence.
+              Redefining <span className="text-primary">Premium</span> Menswear & Womenswear Fabrics Through <span className="text-primary">Innovation</span> & Excellence.
             </h1>
 
-            <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed font-medium">
-              Founded by Rohitash Jindal | 25+ Years of Industry Leadership | Global Presence | Premium Fabric Manufacturing
-            </p>
+            <div className="flex flex-wrap justify-center gap-3 md:gap-4 mt-8">
+              {[
+                'B2B Fabric Solutions',
+                'Global Exports & Wholesale',
+                'Domestic Brands (e.g., Park Avenue)',
+                'Fashion Segments',
+                'Corporate Wear Industry'
+              ].map((tag, i) => (
+                <span
+                  key={i}
+                  className="px-4 md:px-5 py-2 md:py-2.5 bg-card border border-border text-muted-foreground rounded-full text-sm md:text-base font-medium shadow-sm hover:border-primary hover:text-primary transition-all duration-300 cursor-default"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
+      {/* Vision & Future Growth */}
+      <section className="py-16 bg-slate-50 dark:bg-slate-900/20">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeUp}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">Vision & Future Growth</h2>
+            <p className="text-xl text-muted-foreground">
+              Our vision is built on five core pillars that guide our growth and decision-making:
+            </p>
+          </motion.div>
 
+          <div className="flex flex-wrap justify-center gap-4 lg:gap-8">
+            {['Innovation', 'Speed', 'Quality', 'Sustainability', 'Reliability'].map((pillar, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
+                className="bg-background border border-border px-8 py-4 rounded-full text-lg font-bold text-foreground shadow-sm hover:border-primary hover:text-primary transition-colors cursor-default"
+              >
+                {pillar}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* Company Overview Section */}
       <section className="py-20 lg:py-32 bg-slate-50 dark:bg-slate-900/20 relative">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
@@ -107,7 +151,7 @@ export default function AboutPageContent() {
 
               <motion.div variants={fadeUp} className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  <strong>StyleFab</strong> Private Limited is dedicated to creating premium fabric solutions, built on a strong foundation of quality, innovation, and deep market understanding. With over a decade of operational excellence, we are a trusted partner for delivering high-quality woven fabrics tailored specifically for menswear.
+                  <strong>StyleFab</strong> Private Limited is dedicated to creating premium fabric solutions, built on a strong foundation of quality, innovation, and deep market understanding. With over a decade of operational excellence, we are a trusted partner for delivering high-quality woven fabrics tailored specifically for both menswear and womenswear.
                 </p>
                 <p>
                   The company specializes in fabric development, product innovation, sourcing, and international supply, serving fashion brands, garment manufacturers, retailers, and sourcing partners across domestic and international markets. Our core strength lies in combining traditional textile craftsmanship with modern production techniques.
@@ -151,7 +195,7 @@ export default function AboutPageContent() {
               {
                 title: 'Business Operations',
                 icon: Briefcase,
-                desc: 'We specialize in the local sale of premium fabric brands. We purchase yarn and process it through specialized job work under strict supervision and our own quality control team to achieve world-class quality. We proudly supply major brands including Raymond’s, Arvind Mills, Blackberry, Future Lifestyles, and Van Heusen. We are now expanding our reach in the Indian market through an online platform for both fabric and garments.'
+                desc: 'We specialize in premium B2B fabric solutions, global exports, and wholesale. We purchase yarn and process it through specialized job work under strict supervision by our quality control team to achieve world-class quality. We proudly supply high-quality fabrics to major domestic brands like Park Avenue, Raymond, Arvind Mills, and Blackberrys, while also catering to international fashion segments and the corporate wear industry.'
               },
               {
                 title: 'Innovation & Sustainability',
@@ -166,7 +210,7 @@ export default function AboutPageContent() {
               {
                 title: 'Team Excellence',
                 icon: Users,
-                desc: 'Our dedicated team at StyleFab innovates and excels in the manufacturing of blended suiting fabrics. We adhere to the highest quality standards to consistently satisfy and exceed our customers’ demands.'
+                desc: 'Our dedicated team at StyleFab innovates and excels in the manufacturing of premium fabrics. We adhere to the highest quality standards to consistently satisfy and exceed our customers’ demands.'
               },
               {
                 title: 'Our Ambition',
@@ -176,7 +220,7 @@ export default function AboutPageContent() {
               {
                 title: 'Production Scale',
                 icon: Factory,
-                desc: 'To meet the growing demand for our premium textiles, StyleFab is targeting the production of approximately 200,000 meters a month of poly-viscose and poly-viscose-stretch fabrics specifically designed for men’s wear.'
+                desc: 'To meet the growing demand for our premium textiles, StyleFab is targeting the production of approximately 200,000 meters a month of high-quality fabrics specifically designed for men’s and women’s wear.'
               },
             ].map((item, index) => (
               <motion.div
@@ -224,7 +268,9 @@ export default function AboutPageContent() {
                   'Advanced fabric development and innovation',
                   'Efficient production management',
                   'Premium finishing techniques',
-                  'Understanding global customer requirements'
+                  'Understanding global customer requirements',
+                  'Aligning with the latest global fashion trends',
+                  'Sustainable finishing techniques for premium luxury handfeels'
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-muted-foreground">
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
@@ -365,38 +411,7 @@ export default function AboutPageContent() {
         </div>
       </section>
 
-      {/* Vision & Future Growth */}
-      <section className="py-16 bg-slate-50 dark:bg-slate-900/20">
-        <div className="max-w-7xl mx-auto px-6 md:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeUp}
-            className="text-center max-w-3xl mx-auto mb-16"
-          >
-            <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">Vision & Future Growth</h2>
-            <p className="text-xl text-muted-foreground">
-              Our vision is built on five core pillars that guide our growth and decision-making:
-            </p>
-          </motion.div>
 
-          <div className="flex flex-wrap justify-center gap-4 lg:gap-8">
-            {['Innovation', 'Speed', 'Partnership', 'Sustainability', 'Reliability'].map((pillar, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="bg-background border border-border px-8 py-4 rounded-full text-lg font-bold text-foreground shadow-sm hover:border-primary hover:text-primary transition-colors cursor-default"
-              >
-                {pillar}
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
     </div>
   );

@@ -49,7 +49,7 @@ export default function Hero() {
           >
             <Box className="w-5 h-5 text-primary" strokeWidth={2.5} />
             <span className="text-primary font-bold text-sm tracking-widest uppercase">
-              Premium Menswear Fabrics
+              Premium  Fabrics
             </span>
           </motion.div>
 
@@ -60,8 +60,7 @@ export default function Hero() {
             animate="visible"
             className="text-5xl md:text-7xl lg:text-[80px]  font-bold text-foreground leading-[1.1] tracking-tight"
           >
-            Redefining Premium Fabrics Through Innovation.
-          </motion.h1>
+            Redefining Fabric Creation Through Innovation.          </motion.h1>
 
           <motion.p
             custom={2}

@@ -11,6 +11,15 @@ const fadeUp: Variants = {
 };
 
 const swatches = [
+  { image: '/products/Wool 1.jpg.jpeg', name: 'Premium Wool Blend 1' },
+  { image: '/products/Wool 2.jpg.jpeg', name: 'Premium Wool Blend 2' },
+  { image: '/products/Wool 3.jpg.jpeg', name: 'Premium Wool Blend 3' },
+  { image: '/products/Wool 4.jpg.jpeg', name: 'Premium Wool Blend 4' },
+  { image: '/products/Wool 5.jpg.jpeg', name: 'Premium Wool Blend 5' },
+  { image: '/products/Wool 6.jpg.jpeg', name: 'Premium Wool Blend 6' },
+  { image: '/products/Wool 7.jpg.jpeg', name: 'Premium Wool Blend 7' },
+  { image: '/products/Wool 8.jpg.jpeg', name: 'Premium Wool Blend 8' },
+  { image: '/products/Wool 9.jpg.jpeg', name: 'Premium Wool Blend 9' },
   { image: '/products/0T1A3819.jpg.jpeg', name: 'Premium Suiting 0T1A' },
   { image: '/products/U2R (26).jpg.jpeg', name: 'Check Suiting U2R-26' },
   { image: '/products/U2R (27).jpg.jpeg', name: 'Check Suiting U2R-27' },
@@ -22,28 +31,20 @@ const swatches = [
   { image: '/products/W1169_2.jpg.jpeg', name: 'Classic Weave W1169' },
   { image: '/products/W1333(1) (1).jpg.jpeg', name: 'Premium Check W1333' },
   { image: '/products/W1333(1).jpg.jpeg', name: 'Classic Check W1333' },
-  { image: '/products/Wool 1.jpg.jpeg', name: 'Premium Wool Blend 1' },
-  { image: '/products/Wool 2.jpg.jpeg', name: 'Premium Wool Blend 2' },
-  { image: '/products/Wool 3.jpg.jpeg', name: 'Premium Wool Blend 3' },
-  { image: '/products/Wool 4.jpg.jpeg', name: 'Premium Wool Blend 4' },
-  { image: '/products/Wool 5.jpg.jpeg', name: 'Premium Wool Blend 5' },
-  { image: '/products/Wool 6.jpg.jpeg', name: 'Premium Wool Blend 6' },
-  { image: '/products/Wool 7.jpg.jpeg', name: 'Premium Wool Blend 7' },
-  { image: '/products/Wool 8.jpg.jpeg', name: 'Premium Wool Blend 8' },
-  { image: '/products/Wool 9.jpg.jpeg', name: 'Premium Wool Blend 9' },
+
 ];
 
 const products = [
   {
-    title: 'Poly-Viscose (T/R) Blends',
-    description: 'StyleFab manufactures fabrics with spun yarns having an intimate blending of polyester and viscose staple fibres. In a 65% polyester / 35% viscose mix, this versatile combination creates a wide range of applications — delivering improved comfort, durability, colour fastness and easy care.',
-    features: ['Improved Comfort', 'High Durability', 'Easy Care'],
-    image: '/poly_viscose_blends.png',
+    title: 'Wool & Wool Blends',
+    description: 'Premium wool and wool-blended fabrics offering superior warmth, durability, and a sophisticated drape for formal wear.',
+    features: ['Superior Warmth', 'Sophisticated Drape', 'High Durability'],
+    image: '/prod_wool.png',
   },
   {
-    title: 'P/V Linen Blends',
-    description: 'Linen enjoys a privileged position in the fashion industry. StyleFab has developed a blend of linen with poly-viscose that makes the fabric machine washable and easy-care, while retaining linen\'s natural comfort.',
-    features: ['Natural Comfort', 'Machine Washable', 'Easy-care'],
+    title: '100% Pure Linen',
+    description: 'Natural, highly breathable pure linen fabrics that provide exceptional comfort and a distinctively elegant texture.',
+    features: ['High Breathability', 'Natural Texture', 'Exceptional Comfort'],
     image: '/pv_linen_blends.png',
   },
   {
@@ -53,10 +54,16 @@ const products = [
     image: '/pv_lycra_blends.png',
   },
   {
-    title: 'Poly-Bamboo Blends',
-    description: 'Bamboo fibre is made from bamboo timber matured in the forest for at least four years. The hollowness of the fibre contributes to very high absorbency and enables it to hold dyes effectively. Being naturally anti-bacterial, this blend offers long-lasting bacterial resistance.',
-    features: ['High Absorbency', 'Anti-bacterial', 'Eco-friendly'],
-    image: '/poly_bamboo_blends.png',
+    title: 'Poly-Viscose (T/R) Blends',
+    description: 'StyleFab manufactures fabrics with spun yarns having an intimate blending of polyester and viscose staple fibres. In a 65% polyester / 35% viscose mix, this versatile combination creates a wide range of applications — delivering improved comfort, durability, colour fastness and easy care.',
+    features: ['Improved Comfort', 'High Durability', 'Easy Care'],
+    image: '/poly_viscose_blends.png',
+  },
+  {
+    title: 'Multi-Blend Fabrics',
+    description: 'Expertly engineered fabrics combining polyester, linen, and stretch fibres to deliver the perfect balance of comfort, durability, and flexibility. These multi-blend fabrics are designed for modern wear, offering enhanced performance with a refined texture and fit.',
+    features: ['Enhanced Comfort', 'Flexible Stretch', 'Durable Blends'],
+    image: '/multi_blend_fabrics.png',
   },
   {
     title: 'Performance Finishes',
@@ -109,7 +116,7 @@ export default function ProductsPageContent() {
                 className="object-cover transform group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
-              
+
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 pt-12">
                 <p className="text-white text-sm md:text-base font-semibold text-center truncate shadow-black drop-shadow-md">
                   {swatch.name}

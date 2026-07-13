@@ -29,16 +29,16 @@ export const metadata: Metadata = {
 export default function Home() {
   const products = [
     {
-      iconName: 'Droplets',
-      title: 'Poly-Viscose Blends',
+      iconName: 'Layers',
+      title: 'Wool & Wool Blends',
       description:
-        'A versatile 65/35 mix delivering improved comfort, high durability, colour fastness and easy care.',
+        'Premium wool and wool-blended fabrics offering superior warmth, durability, and a sophisticated drape for formal wear.',
     },
     {
       iconName: 'Wind',
-      title: 'P/V Linen Blends',
+      title: '100% Pure Linen',
       description:
-        'Machine washable and easy-care blends that retain linen\'s natural breathability and comfort.',
+        'Natural, highly breathable pure linen fabrics that provide exceptional comfort and a distinctively elegant texture.',
     },
     {
       iconName: 'Activity',
@@ -47,10 +47,10 @@ export default function Home() {
         'Premium stretch fabrics offering durability, comfort, fit and complete freedom of movement.',
     },
     {
-      iconName: 'Leaf',
-      title: 'Poly-Bamboo Blends',
+      iconName: 'Droplets',
+      title: 'Poly-Viscose (T/R) Blends',
       description:
-        'Eco-friendly blends featuring very high absorbency and natural, long-lasting bacterial resistance.',
+        'A versatile 65/35 mix delivering improved comfort, high durability, colour fastness and easy care.',
     },
     {
       iconName: 'ShieldCheck',

@@ -68,7 +68,7 @@ export default function Navigation() {
         <div className="hidden lg:flex items-center gap-6 flex-shrink-0">
           <div className="flex flex-col items-end">
             <span className="text-[11px] font-semibold text-primary uppercase tracking-wider mb-0.5">
-              For Franchises & Distributorship
+              FOR  FRANCHISE & DISTRIBUTORS ENQUIRIES
             </span>
             <a href="tel:+919137544608" className="flex items-center gap-2 font-bold text-slate-800 hover:text-primary transition-colors">
               <Phone className="h-4 w-4 text-primary" strokeWidth={2.5} />
@@ -209,7 +209,7 @@ export default function Navigation() {
               <div className="mt-6 flex flex-col gap-4">
                 <div className="flex flex-col items-center gap-1">
                   <span className="text-[11px] font-semibold text-primary uppercase tracking-wider">
-                    For Franchises & Distributorship
+                    FOR  FRANCHISE & DISTRIBUTORS ENQUIRIES
                   </span>
                   <a href="tel:+919137544608" className="flex items-center justify-center gap-2 text-[15px] font-bold text-slate-800 hover:text-primary transition-colors">
                     <Phone className="h-4 w-4 text-primary" strokeWidth={2.5} />

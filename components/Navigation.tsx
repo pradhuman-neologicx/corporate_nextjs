@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
+  { label: 'Collections', href: '/collections' },
   { label: 'Products', href: '/products' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -65,22 +66,17 @@ export default function Navigation() {
 
         {/* Right Actions (Desktop) */}
         <div className="hidden lg:flex items-center gap-6 flex-shrink-0">
-          <a href="tel:+919137544608" className="flex items-center gap-2 font-bold text-slate-800 hover:text-primary transition-colors">
-            <Phone className="h-4 w-4 text-primary" strokeWidth={2.5} />
-            <span className="underline decoration-slate-300 underline-offset-4 hover:decoration-primary">
-              +91 91375 44608
+          <div className="flex flex-col items-end">
+            <span className="text-[11px] font-semibold text-primary uppercase tracking-wider mb-0.5">
+              For Franchises & Distributorship
             </span>
-          </a>
-
-          <Link
-            href="/contact"
-            className="group flex items-center gap-3 rounded-full bg-primary py-2 pl-6 pr-2 text-[15px] font-bold text-white transition-all hover:bg-primary/90"
-          >
-            Let's Talk
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0A3C38] transition-transform group-hover:-translate-y-[2px] group-hover:translate-x-[2px]">
-              <ArrowUpRight className="h-4 w-4 text-white" strokeWidth={2.5} />
-            </div>
-          </Link>
+            <a href="tel:+919137544608" className="flex items-center gap-2 font-bold text-slate-800 hover:text-primary transition-colors">
+              <Phone className="h-4 w-4 text-primary" strokeWidth={2.5} />
+              <span className="underline decoration-slate-300 underline-offset-4 hover:decoration-primary">
+                +91 91375 44608
+              </span>
+            </a>
+          </div>
 
           {/* Desktop Hamburger */}
           {/* <button
@@ -211,17 +207,15 @@ export default function Navigation() {
                 </Link>
               ))}
               <div className="mt-6 flex flex-col gap-4">
-                <a href="tel:+919137544608" className="flex items-center justify-center gap-2 text-[15px] font-bold text-slate-800">
-                  <Phone className="h-4 w-4 text-primary" strokeWidth={2.5} />
-                  +91 91375 44608
-                </a>
-                <Link
-                  href="/contact"
-                  onClick={() => setIsOpen(false)}
-                  className="flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3.5 text-[15px] font-bold text-white"
-                >
-                  Let's Talk
-                </Link>
+                <div className="flex flex-col items-center gap-1">
+                  <span className="text-[11px] font-semibold text-primary uppercase tracking-wider">
+                    For Franchises & Distributorship
+                  </span>
+                  <a href="tel:+919137544608" className="flex items-center justify-center gap-2 text-[15px] font-bold text-slate-800 hover:text-primary transition-colors">
+                    <Phone className="h-4 w-4 text-primary" strokeWidth={2.5} />
+                    +91 91375 44608
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>

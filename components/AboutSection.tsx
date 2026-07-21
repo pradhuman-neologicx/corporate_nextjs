@@ -153,7 +153,7 @@ export default function AboutSection() {
             {/* Bottom Left: Image Block */}
             <div className="relative rounded-[2rem] overflow-hidden aspect-[4/4.5] bg-slate-900 group shadow-xl">
               <img
-                src="/corporate_leader.png"
+                src="/owner.png"
                 alt="Company Leadership"
                 className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
               />

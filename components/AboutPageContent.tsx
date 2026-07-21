@@ -256,7 +256,7 @@ export default function AboutPageContent() {
             className="bg-slate-50 dark:bg-slate-900/20 rounded-3xl p-8 lg:p-12 border border-border flex flex-col md:flex-row gap-10 items-center"
           >
             <div className="w-full md:w-1/3">
-              <img src="/corporate_leader.png" alt="Mr. Rohitash Jindal" className="rounded-2xl object-cover w-full h-[400px]" />
+              <img src="/owner.png" alt="Mr. Rohitash Jindal" className="rounded-2xl object-cover w-full h-[400px]" />
             </div>
             <div className="w-full md:w-2/3">
               <h2 className="text-3xl font-bold text-foreground mb-4">Founder's Vision & Expertise</h2>
@@ -409,7 +409,7 @@ export default function AboutPageContent() {
                   <h3 className="text-2xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{brand.title}</h3>
                   <p className="text-primary font-bold mb-4">{brand.subtitle}</p>
                   <p className="text-muted-foreground text-sm leading-relaxed flex-grow">{brand.desc}</p>
-                  
+
                   <div className="mt-6 pt-6 border-t border-border flex justify-center items-center text-primary font-semibold text-sm group-hover:underline underline-offset-4">
                     View Collection &rarr;
                   </div>

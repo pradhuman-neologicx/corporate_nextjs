@@ -25,7 +25,6 @@ const brandsData = {
       { image: `/fabric-collection/donna-azzura/bb80-percent-cotton-18-percent-polyester-2-percent-lycra.jpg`, name: `(BB)80% Cotton, 18% Polyester, 2% Lycra` },
       { image: `/fabric-collection/donna-azzura/c76-percent-polyester-22-percent-viscose-2-percent-lycra.jpg`, name: `(C)76% Polyester, 22% Viscose, 2% Lycra` },
       { image: `/fabric-collection/donna-azzura/cc80-percent-cotton-18-percent-polyester-2-percent-lycra.jpg`, name: `(CC)80% Cotton, 18% Polyester, 2% Lycra` },
-      { image: `/fabric-collection/donna-azzura/d97-percent-cotton-3-percent-lycra.jpg`, name: `(D)97% Cotton, 3% Lycra` },
       { image: `/fabric-collection/donna-azzura/dd61-percent-polyester-30-percent-viscose-8-percent-linen-1-percent-lycra.jpg`, name: `(DD)61% Polyester, 30% Viscose, 8% Linen, 1% Lycra` },
       { image: `/fabric-collection/donna-azzura/e64-percent-polyester-34-percent-viscose-2-percent-lycra.jpg`, name: `(E)64% Polyester, 34% Viscose, 2% Lycra` },
       { image: `/fabric-collection/donna-azzura/ee61-percent-polyester-30-percent-viscose-8-percent-linen-1-percent-lycra.jpg`, name: `(EE)61% Polyester, 30% Viscose, 8% Linen, 1% Lycra` },

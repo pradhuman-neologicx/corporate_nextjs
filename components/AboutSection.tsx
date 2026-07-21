@@ -132,7 +132,7 @@ export default function AboutSection() {
               <BarChart3 className="w-7 h-7 text-primary-foreground stroke-[1.5]" />
             </div>
             <div className="relative z-10 mt-auto">
-              <p className="text-primary-foreground font-medium mb-1">Decades of Expertise</p>
+              <p className="text-white font-medium mb-1">Decades of Expertise</p>
               <h3 className="text-6xl font-bold text-white tracking-tight">25+</h3>
             </div>
           </motion.div>
